@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 
-const courses = ["Guitar", "Keyboard", "Drums", "Violin", "Dance", "Art"];
-const branches = ["Indiranagar", "Koramangala", "Whitefield"];
+const courses = ["Music", "Dance", "Fitness", "Arts", "Guitar", "Keyboard", "Drums", "Violin", "Vocals"];
+const branches = ["Arekere", "Hulimavu"];
 
 export default function CTASection() {
   const [formData, setFormData] = useState({
@@ -26,10 +26,13 @@ export default function CTASection() {
       <div className="mx-auto max-w-3xl">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            Book Your Free Demo Class Today
+            Sign Up For A Course
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/90">
-            Fill in your details and we&apos;ll get back to you within 24 hours.
+            Unlock your musical potential with expert training at Johnson&apos;s Academy. Whether you&apos;re a beginner or an advanced learner, we have the perfect course for you!
+          </p>
+          <p className="mx-auto mt-2 text-sm text-white/80">
+            Not sure what level you are? Talk to our instructors—we&apos;re here to help.
           </p>
         </div>
         <form
@@ -110,7 +113,7 @@ export default function CTASection() {
             type="submit"
             className="mt-4 w-full rounded-2xl bg-white px-6 py-4 text-lg font-semibold text-primary transition-all hover:bg-white/90 hover:shadow-xl"
           >
-            Book Free Demo
+            Sign Up Now
           </button>
         </form>
       </div>

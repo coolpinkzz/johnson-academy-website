@@ -4,10 +4,10 @@ import { useState } from "react";
 
 const navLinks = [
   { label: "Home", href: "#" },
-  { label: "Courses", href: "#courses" },
-  { label: "Branches", href: "#branches" },
   { label: "About", href: "#why-choose-us" },
-  { label: "Contact", href: "#contact" },
+  { label: "Courses", href: "#courses" },
+  { label: "Gallery", href: "#gallery" },
+  { label: "Testimonials", href: "#testimonials" },
 ];
 
 export default function Header() {
@@ -22,7 +22,7 @@ export default function Header() {
             alt="Johnson Academy"
             className="h-10 w-auto object-contain"
           />
-          <span className="text-xl font-bold text-white">Johnson Academy</span>
+          <span className="text-xl font-bold text-white">Johnson&apos;s Academy</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -42,7 +42,7 @@ export default function Header() {
             href="#contact"
             className="hidden sm:inline-flex items-center justify-center rounded-2xl bg-primary px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary/90 hover:shadow-primary/30"
           >
-            Book Free Demo
+            Contact us
           </a>
 
           <button
@@ -79,7 +79,7 @@ export default function Header() {
               className="mt-2 rounded-2xl bg-primary px-4 py-3 text-center font-semibold text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Book Free Demo
+              Contact us
             </a>
           </nav>
         </div>

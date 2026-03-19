@@ -16,8 +16,9 @@ export default function Hero() {
               Best Music & Dance Academy in Bangalore
             </h1>
             <p className="mt-6 text-lg text-muted sm:text-xl">
-              Master Guitar, Keyboard, Drums, Violin, Dance & Art with certified trainers. 
-              Flexible timings for all age groups. Start your musical journey today.
+              Master Guitar, Keyboard, Drums, Violin, Dance & Art with certified
+              trainers. Flexible timings for all age groups. Start your musical
+              journey today.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-6">
               <a
@@ -30,7 +31,11 @@ export default function Hero() {
                 href="#video"
                 className="inline-flex items-center justify-center gap-2 rounded-2xl border-2 border-white/20 px-8 py-4 text-base font-semibold text-white transition-all hover:border-primary hover:bg-white/5"
               >
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path d="M8 5v14l11-7z" />
                 </svg>
                 Watch Video
@@ -39,7 +44,9 @@ export default function Hero() {
             <div className="mt-16 grid grid-cols-3 gap-8">
               {stats.map((stat) => (
                 <div key={stat.label}>
-                  <p className="text-2xl font-bold text-primary sm:text-3xl">{stat.value}</p>
+                  <p className="text-2xl font-bold text-primary sm:text-3xl">
+                    {stat.value}
+                  </p>
                   <p className="mt-1 text-sm text-muted">{stat.label}</p>
                 </div>
               ))}

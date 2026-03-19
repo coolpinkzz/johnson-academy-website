@@ -49,5 +49,113 @@ next-env.d.ts
 # eslint
 .eslintcache
 
+# turbo
+.turbo
+
+# ide
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# local env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# eslint
+.eslintcache
+
+# turbo
+.turbo
+
+# cache
+.cache
+
+# IDE
+.idea
+*.swp
+*.swo
+*~
+
+# eslint
+.eslintcache
+
+# turbo
+.turbo
+
+# cache
+.cache
+
+# ide
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# eslint
+.eslintcache
+
+# cache
+.turbo
+.cache
+
+# eslint
+.eslintcache
+
+# turborepo
+.turbo
+
+# cache
+.cache
+
+# eslint
+.eslintcache
+
+# turbo
+.turbo
+
+# ide
+.idea
+*.swp
+*.swo
+
+# cache
+.cache
+
+# eslint
+.eslintcache
+
+# turbo
+.turbo
+
+# ide
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# ide
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# turbo
+.turbo
+
+# eslint
+.eslintcache
+
+# local env (keep .env.example if you use one)
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# eslint
+.eslintcache
+
 # cache
 .cache
