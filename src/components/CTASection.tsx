@@ -2,7 +2,17 @@
 
 import { useState } from "react";
 
-const courses = ["Music", "Dance", "Fitness", "Arts", "Guitar", "Keyboard", "Drums", "Violin", "Vocals"];
+const courses = [
+  "Music",
+  "Dance",
+  "Fitness",
+  "Arts",
+  "Guitar",
+  "Keyboard",
+  "Drums",
+  "Violin",
+  "Vocals",
+];
 const branches = ["Arekere", "Hulimavu"];
 
 export default function CTASection() {
@@ -21,26 +31,68 @@ export default function CTASection() {
   return (
     <section
       id="contact"
-      className="bg-primary px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28"
+      className="relative overflow-hidden bg-black px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28"
     >
-      <div className="mx-auto max-w-3xl">
+      {/* Liquid glass blobs */}
+      <div className="pointer-events-none absolute inset-0">
+        <div
+          className="absolute -left-20 -top-20 h-80 w-80 rounded-[60%_40%_70%_30%/60%_30%_70%_40%] opacity-40 blur-3xl"
+          style={{
+            background:
+              "linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(147,197,253,0.08) 50%, transparent 100%)",
+            animation: "liquid-blob 15s ease-in-out infinite",
+          }}
+        />
+        <div
+          className="absolute -bottom-24 -right-24 h-96 w-96 rounded-[40%_60%_30%_70%/50%_60%_40%_50%] opacity-30 blur-3xl"
+          style={{
+            background:
+              "linear-gradient(225deg, rgba(196,181,253,0.12) 0%, rgba(255,255,255,0.08) 50%, transparent 100%)",
+            animation: "liquid-blob 18s ease-in-out infinite reverse",
+          }}
+        />
+        <div
+          className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-[70%_30%_50%_50%/30%_70%_30%_70%] opacity-25 blur-3xl"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(255,255,255,0.12) 0%, rgba(147,197,253,0.05) 40%, transparent 70%)",
+            animation: "liquid-blob 12s ease-in-out infinite",
+            animationDelay: "-5s",
+          }}
+        />
+      </div>
+      {/* Glass shine overlay */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, transparent 30%, transparent 70%, rgba(255,255,255,0.02) 100%)",
+        }}
+      />
+      <div className="relative mx-auto max-w-3xl">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Sign Up For A Course
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/90">
-            Unlock your musical potential with expert training at Johnson&apos;s Academy. Whether you&apos;re a beginner or an advanced learner, we have the perfect course for you!
+            Unlock your musical potential with expert training at Johnson&apos;s
+            Academy. Whether you&apos;re a beginner or an advanced learner, we
+            have the perfect course for you!
           </p>
           <p className="mx-auto mt-2 text-sm text-white/80">
-            Not sure what level you are? Talk to our instructors—we&apos;re here to help.
+            Not sure what level you are? Talk to our instructors—we&apos;re here
+            to help.
           </p>
         </div>
         <form
           onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-6 rounded-2xl bg-black/20 p-8 backdrop-blur sm:p-10"
+          className="mt-12 flex flex-col gap-6 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-[0_8px_32px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.05)] backdrop-blur-xl sm:p-10"
         >
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-white">
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-white"
+            >
               Name
             </label>
             <input
@@ -48,13 +100,18 @@ export default function CTASection() {
               id="name"
               required
               value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
               className="mt-2 w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-white/60 focus:border-white focus:outline-none focus:ring-2 focus:ring-white/20"
               placeholder="Your name"
             />
           </div>
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-white">
+            <label
+              htmlFor="phone"
+              className="block text-sm font-medium text-white"
+            >
               Phone
             </label>
             <input
@@ -62,20 +119,27 @@ export default function CTASection() {
               id="phone"
               required
               value={formData.phone}
-              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, phone: e.target.value })
+              }
               className="mt-2 w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-white/60 focus:border-white focus:outline-none focus:ring-2 focus:ring-white/20"
               placeholder="Your phone number"
             />
           </div>
           <div>
-            <label htmlFor="course" className="block text-sm font-medium text-white">
+            <label
+              htmlFor="course"
+              className="block text-sm font-medium text-white"
+            >
               Course
             </label>
             <select
               id="course"
               required
               value={formData.course}
-              onChange={(e) => setFormData({ ...formData, course: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, course: e.target.value })
+              }
               className="mt-2 w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-white focus:border-white focus:outline-none focus:ring-2 focus:ring-white/20"
             >
               <option value="" className="bg-black text-white">
@@ -89,14 +153,19 @@ export default function CTASection() {
             </select>
           </div>
           <div>
-            <label htmlFor="branch" className="block text-sm font-medium text-white">
+            <label
+              htmlFor="branch"
+              className="block text-sm font-medium text-white"
+            >
               Branch
             </label>
             <select
               id="branch"
               required
               value={formData.branch}
-              onChange={(e) => setFormData({ ...formData, branch: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, branch: e.target.value })
+              }
               className="mt-2 w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-white focus:border-white focus:outline-none focus:ring-2 focus:ring-white/20"
             >
               <option value="" className="bg-black text-white">

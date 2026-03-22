@@ -130,10 +130,10 @@ export default function BranchesSection() {
                 {/* CTA Buttons */}
                 <div className="mt-auto flex flex-col gap-3 pt-6 sm:flex-row sm:items-center">
                   <a
-                    href="#contact"
+                    href="tel:+917798347976"
                     className="inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-primary/90"
                   >
-                    Book Demo at This Branch
+                    Book Demo
                   </a>
                   <a
                     href={branch.mapLink}

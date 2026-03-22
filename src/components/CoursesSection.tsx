@@ -6,46 +6,67 @@ const courses = [
     description:
       "Learn acoustic and electric guitar from basics to advanced techniques.",
     image:
-      "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=400&q=80",
-    href: "#courses",
+      "https://www.johnsonsacademy.in/wp-content/uploads/2025/03/pcb2007436T01.jpg",
+    href: "/courses/guitar-classes-bangalore",
   },
   {
     title: "Keyboard",
     description:
       "Master piano and keyboard with structured lessons for all levels.",
     image:
-      "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=400&q=80",
-    href: "#courses",
+      "https://www.johnsonsacademy.in/wp-content/uploads/2025/03/DSC03778-scaled.jpg",
+    href: "/courses/keyboard-classes-bangalore",
   },
   {
     title: "Drums",
     description: "Rhythm and percussion training for aspiring drummers.",
     image:
-      "https://images.unsplash.com/photo-1545128485-c400e7702796?w=400&q=80",
-    href: "#courses",
+      "https://www.johnsonsacademy.in/wp-content/uploads/2025/03/DSC03635-scaled.jpg",
+    href: "/courses/drum-classes-bangalore",
+  },
+  {
+    title: "Piano",
+    description: "Structured piano lessons for all skill levels.",
+    image:
+      "https://www.johnsonsacademy.in/wp-content/uploads/2025/03/DSC04056-scaled.jpg",
+    href: "/courses/piano-classes-bangalore",
   },
   {
     title: "Violin",
     description:
       "Classical violin training with focus on technique and expression.",
     image:
-      "https://images.unsplash.com/photo-1510915228350-0c82a2720669?w=400&q=80",
-    href: "#courses",
+      "https://images.unsplash.com/photo-1725673853787-aae551326d9f?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    href: "/courses/violin-classes-bangalore",
+  },
+  {
+    title: "Vocal",
+    description: "Indian, Hindustani, and Western vocal training.",
+    image:
+      "https://www.johnsonsacademy.in/wp-content/uploads/2025/03/DSC04044-scaled.jpg",
+    href: "/courses/hindustani-vocal-classes-bangalore",
   },
   {
     title: "Dance",
     description:
       "Contemporary, classical, and western dance forms for all ages.",
     image:
-      "https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=400&q=80",
-    href: "#courses",
+      "https://www.johnsonsacademy.in/wp-content/uploads/2025/03/DSC02338-scaled.jpg",
+    href: "/courses/dance-classes-bangalore",
   },
   {
     title: "Art",
     description: "Creative art classes including drawing, painting, and more.",
     image:
       "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&q=80",
-    href: "#courses",
+    href: "/courses/art-classes-bangalore",
+  },
+  {
+    title: "Karate",
+    description: "Martial arts training for discipline and fitness.",
+    image:
+      "https://www.johnsonsacademy.in/wp-content/uploads/2025/03/DSC03687-scaled.jpg",
+    href: "/courses/karate-classes-bangalore",
   },
 ];
 

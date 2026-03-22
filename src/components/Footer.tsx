@@ -1,9 +1,15 @@
 const footerLinks = [
-  { label: "About", href: "#why-choose-us" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Courses", href: "#courses" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about" },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "Courses", href: "/courses" },
+  { label: "Testimonials", href: "/#testimonials" },
+  { label: "Contact", href: "/contact" },
+];
+
+const legalLinks = [
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
+  { label: "Refund Policy", href: "/refund-policy" },
 ];
 
 const socialLinks = [
@@ -48,15 +54,22 @@ export default function Footer() {
                 alt="Johnson's Academy"
                 className="h-10 w-auto object-contain"
               />
-              <span className="text-xl font-bold text-white">Johnson&apos;s Academy</span>
+              <span className="text-xl font-bold text-white">
+                Johnson&apos;s Academy
+              </span>
             </div>
             <p className="text-sm text-muted">
-              Johnson&apos;s Academy offers expert music lessons for all ages and skill levels. Our passionate instructors provide personalized training in a variety of musical genres to help you master your craft.
+              Johnson&apos;s Academy offers expert music lessons for all ages
+              and skill levels. Our passionate instructors provide personalized
+              training in a variety of musical genres to help you master your
+              craft.
             </p>
           </div>
           <div className="flex flex-col gap-6 sm:flex-row sm:gap-12">
             <div>
-              <h4 className="text-sm font-semibold text-white mb-3">Quick Links</h4>
+              <h4 className="text-sm font-semibold text-white mb-3">
+                Quick Links
+              </h4>
               <nav className="flex flex-col gap-2">
                 {footerLinks.map((link) => (
                   <a
@@ -70,12 +83,31 @@ export default function Footer() {
               </nav>
             </div>
             <div>
-              <h4 className="text-sm font-semibold text-white mb-3">Contact Us</h4>
+              <h4 className="text-sm font-semibold text-white mb-3">
+                Contact Us
+              </h4>
               <div className="flex flex-col gap-2 text-sm text-muted">
-                <p>Branch 1: 189, 5th Main Rd, Vysya Bank Colony, Shantiniketan Layout, Arekere, Bengaluru, Karnataka - 560076</p>
-                <p>Branch 2: 3rd Floor, SS Arcade, DLF Main Rd, above KFC, next to KaiRuchi, Bhagyalakshmi Avenue, Rukmaiah Layout, Hulimavu, Bengaluru, Karnataka - 560076</p>
-                <a href="tel:+917798347976" className="hover:text-primary transition-colors">+91 77983 47976</a>
-                <a href="mailto:info@johnsonsacademy.in" className="hover:text-primary transition-colors">info@johnsonsacademy.in</a>
+                <p>
+                  Branch 1: 189, 5th Main Rd, Vysya Bank Colony, Shantiniketan
+                  Layout, Arekere, Bengaluru, Karnataka - 560076
+                </p>
+                <p>
+                  Branch 2: 3rd Floor, SS Arcade, DLF Main Rd, above KFC, next
+                  to KaiRuchi, Bhagyalakshmi Avenue, Rukmaiah Layout, Hulimavu,
+                  Bengaluru, Karnataka - 560076
+                </p>
+                <a
+                  href="tel:+917798347976"
+                  className="hover:text-primary transition-colors"
+                >
+                  +91 77983 47976
+                </a>
+                <a
+                  href="mailto:info@johnsonsacademy.in"
+                  className="hover:text-primary transition-colors"
+                >
+                  info@johnsonsacademy.in
+                </a>
               </div>
             </div>
           </div>
@@ -107,10 +139,22 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className="mt-8 border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-center gap-2 text-center text-sm text-muted">
-          <p>© {new Date().getFullYear()} Johnson&apos;s Academy. All Rights Reserved.</p>
-          <span className="hidden sm:inline">•</span>
-          <p>Built by Adhvitiya</p>
+        <div className="mt-8 border-t border-white/10 pt-8 flex flex-col items-center justify-center gap-4 text-center text-sm text-muted">
+          <nav className="flex items-center justify-center gap-4">
+            {legalLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="text-muted hover:text-primary hover:underline transition-colors"
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+          <p>
+            © {new Date().getFullYear()} Johnson&apos;s Academy. All Rights
+            Reserved.
+          </p>
         </div>
       </div>
     </footer>
