@@ -1,0 +1,432 @@
+{
+  "courses": [
+    {
+      "id": "guitar-classes-bangalore",
+      "title": "Guitar Classes in Bangalore",
+      "description": "Master acoustic and electric guitar with structured lessons from certified trainers. Whether you're a beginner or advancing your skills, our guitar classes in Bangalore cater to all levels.",
+      "image": "https://images.unsplash.com/photo-1605020420620-20c943cc4669?q=80&w=2070&auto=format&fit=crop",
+      "metaDescription": "Join the best guitar classes in Bangalore at Johnson's Academy. Learn from expert trainers. Book a free demo today.",
+      "about": [
+        "Our guitar classes in Bangalore are designed to take you from basic chords to advanced techniques. Our experienced instructors bring years of performance and teaching experience to every session.",
+        "We cover both acoustic and electric guitar, including fingerstyle, strumming patterns, music theory, and performance skills. Our curriculum progresses from beginner to advanced levels.",
+        "Flexible batch timings and personalized attention ensure you learn at your own pace. Join hundreds of students who have discovered their musical passion at Johnson's Academy."
+      ],
+      "learningPoints": [
+        "Basic chords, scales, and finger positioning",
+        "Strumming patterns and rhythm techniques",
+        "Acoustic and electric guitar fundamentals",
+        "Music theory and reading notation",
+        "Fingerstyle and advanced playing techniques",
+        "Performance skills and stage confidence"
+      ],
+      "whoCanJoin": [
+        "Kids (6+ years)",
+        "Adults",
+        "Beginners",
+        "Intermediate learners"
+      ],
+      "teachers": [
+        {
+          "name": "Arjun Rao",
+          "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&h=400&auto=format&fit=crop",
+          "bio": "Professional guitarist and instructor focused on acoustic and electric styles, from fundamentals to performance.",
+          "experience": "10+ years",
+          "achievements": [
+            "Trinity Rock & Pop — Grade 8",
+            "Session guitarist for regional tours and studio work"
+          ]
+        },
+        {
+          "name": "Rohan Desai",
+          "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&h=400&auto=format&fit=crop",
+          "bio": "Electric guitar and band coaching—rock, blues, and performance skills for ensemble settings.",
+          "experience": "8+ years",
+          "achievements": [
+            "Former touring guitarist with indie acts",
+            "Band workshop facilitator for teens and adults"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drum-classes-bangalore",
+      "title": "Drum Classes in Bangalore",
+      "description": "Build solid rhythm foundations with our drum classes in Bangalore. From basic beats to complex patterns, our certified instructors help you develop timing, coordination, and musical expression.",
+      "image": "https://images.unsplash.com/photo-1569634311433-afb9edb8a3f4?q=80&w=1711&auto=format&fit=crop",
+      "metaDescription": "Join the best drum classes in Bangalore at Johnson's Academy. Learn rhythm and percussion from expert trainers. Book a free demo today.",
+      "about": [
+        "Our drum classes in Bangalore focus on developing strong rhythm fundamentals and technique. Students learn on quality drum kits in a supportive, encouraging environment.",
+        "The curriculum progresses from basic stick control and simple beats to complex fills, grooves, and time signatures. We cover various genres including rock, pop, and fusion.",
+        "Suitable for all age groups, our drum classes help improve coordination, concentration, and creativity. Book a free demo to experience our teaching approach firsthand."
+      ],
+      "learningPoints": [
+        "Stick control and grip techniques",
+        "Basic beats and rhythm patterns",
+        "Drum kit coordination (hands and feet)",
+        "Fills, rolls, and advanced patterns",
+        "Music theory for drummers",
+        "Playing along with tracks and live performance"
+      ],
+      "whoCanJoin": [
+        "Kids (6+ years)",
+        "Adults",
+        "Beginners",
+        "Intermediate learners"
+      ],
+      "teachers": [
+        {
+          "name": "Karthik R",
+          "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&h=400&auto=format&fit=crop",
+          "bio": "Drummer and rhythm coach with experience across rock, fusion, and contemporary styles.",
+          "experience": "12+ years",
+          "achievements": [
+            "Performed with multiple Bangalore live bands",
+            "Workshop facilitator for youth percussion programs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "piano-classes-bangalore",
+      "title": "Piano Classes in Bangalore",
+      "description": "Learn piano the right way with our structured piano classes in Bangalore. From reading sheet music to playing your favorite songs, we guide you from beginner to advanced levels.",
+      "image": "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=800&auto=format&fit=crop",
+      "metaDescription": "Join the best piano classes in Bangalore at Johnson's Academy. Learn from expert trainers. Book a free demo today.",
+      "about": [
+        "Our piano classes in Bangalore offer a balanced mix of classical foundations and contemporary music. Students develop proper technique, finger dexterity, and musical understanding.",
+        "We teach music theory alongside practical skills, so you understand what you're playing. The curriculum is designed for gradual progression from basic notes to complex pieces.",
+        "Individual attention and flexible timings make our piano classes ideal for busy schedules. Join Johnson's Academy and start your musical journey on the keys."
+      ],
+      "learningPoints": [
+        "Piano basics: keys, posture, and hand position",
+        "Reading sheet music and notation",
+        "Scales, chords, and arpeggios",
+        "Classical and contemporary repertoire",
+        "Music theory and harmony",
+        "Sight-reading and improvisation basics"
+      ],
+      "whoCanJoin": [
+        "Kids (5+ years)",
+        "Adults",
+        "Beginners",
+        "Intermediate learners"
+      ],
+      "teachers": [
+        {
+          "name": "Mira Joseph",
+          "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&h=400&auto=format&fit=crop",
+          "bio": "Pianist and educator blending classical training with popular repertoire for students of every age.",
+          "experience": "9+ years",
+          "achievements": [
+            "ABRSM advanced certifications",
+            "Accompanist for choirs and student recitals"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "keyboard-classes-bangalore",
+      "title": "Keyboard Classes in Bangalore",
+      "description": "Master both Western and Indo-Western keyboard at Johnson's Academy. Our keyboard classes in Bangalore cover varied styles—from classical to Bollywood—for learners at every level.",
+      "image": "https://images.unsplash.com/photo-1771209195708-f547e3649ae8?q=80&w=2070&auto=format&fit=crop",
+      "metaDescription": "Join the best keyboard classes in Bangalore at Johnson's Academy. Western and Indo-Western styles. Learn from expert trainers. Book a free demo today.",
+      "about": [
+        "Our keyboard classes in Bangalore combine Western keyboard techniques with Indian music sensibilities. Students learn chords, melody, and accompaniment patterns used in contemporary and traditional music.",
+        "We offer flexible learning paths: Western keyboard for those interested in pop, rock, and jazz; Indo-Western for Bollywood, devotional, and fusion styles. Many students explore both.",
+        "From basic finger exercises to playing full songs, our structured curriculum builds confidence. Beginners to advanced learners find the right pace at Johnson's Academy."
+      ],
+      "learningPoints": [
+        "Western keyboard: chords, scales, and progressions",
+        "Indo-Western styles and Bollywood keyboard",
+        "Both-hand coordination and accompaniment",
+        "Music theory (Western and Indian)",
+        "Rhythm patterns and style variations",
+        "Performance and song arrangement"
+      ],
+      "whoCanJoin": [
+        "Kids (5+ years)",
+        "Adults",
+        "Beginners",
+        "Intermediate learners"
+      ],
+      "teachers": [
+        {
+          "name": "Sanjay Kumar",
+          "image": "https://images.unsplash.com/photo-1519085360753-af011a3a6e1a?q=80&w=400&h=400&auto=format&fit=crop",
+          "bio": "Keyboard specialist in Western and Indo-Western styles, arranging and teaching contemporary songs.",
+          "experience": "11+ years",
+          "achievements": [
+            "Bollywood and fusion session work",
+            "Curriculum designer for graded keyboard programs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hindustani-vocal-classes-bangalore",
+      "title": "Hindustani Vocal Classes in Bangalore",
+      "description": "Discover the beauty of Hindustani classical vocals at Johnson's Academy. Our Hindustani vocal classes in Bangalore teach proper technique, ragas, and expression for all levels.",
+      "image": "https://images.unsplash.com/photo-1738658024539-a8d1527fa8e8?q=80&w=1674&auto=format&fit=crop",
+      "metaDescription": "Join the best Hindustani vocal classes in Bangalore at Johnson's Academy. Learn from expert trainers. Book a free demo today.",
+      "about": [
+        "Our Hindustani vocal classes in Bangalore are rooted in traditional training while remaining accessible to modern learners. Students learn voice culture, pitch control, and the fundamentals of raga and taal.",
+        "The curriculum includes alankars, sargam, light classical, bhajans, and semi-classical forms. We emphasize proper breath control, pronunciation, and emotional expression.",
+        "Whether you're new to Indian classical music or wish to deepen your practice, our experienced instructors guide you from basics to advanced improvisation."
+      ],
+      "learningPoints": [
+        "Voice culture and breath control",
+        "Alankars and sargam practice",
+        "Introduction to ragas and taals",
+        "Light classical and bhajan repertoire",
+        "Semi-classical and thumri basics",
+        "Improvisation and stage performance"
+      ],
+      "whoCanJoin": [
+        "Kids (6+ years)",
+        "Adults",
+        "Beginners",
+        "Intermediate learners"
+      ],
+      "teachers": [
+        {
+          "name": "Ananya Sharma",
+          "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&h=400&auto=format&fit=crop",
+          "bio": "Hindustani vocalist trained in traditional gharana styles with a focus on voice culture and ragas.",
+          "experience": "14+ years",
+          "achievements": [
+            "Concert performances across Karnataka",
+            "Mentor for youth classical music competitions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "indian-vocal-classes-bangalore",
+      "title": "Indian Vocal Classes in Bangalore",
+      "description": "Explore the richness of Indian vocal music at Johnson's Academy. Our Indian vocal classes in Bangalore cover traditional and contemporary styles for singers of all levels.",
+      "image": "https://images.unsplash.com/photo-1738658024539-a8d1527fa8e8?q=80&w=1674&auto=format&fit=crop",
+      "metaDescription": "Join the best Indian vocal classes in Bangalore at Johnson's Academy. Learn from expert trainers. Book a free demo today.",
+      "about": [
+        "Our Indian vocal classes in Bangalore encompass a wide range of styles—from classical and devotional to film songs and folk. Students develop a strong foundation in pitch, rhythm, and expression.",
+        "We focus on voice development, ear training, and understanding Indian musical concepts. The curriculum is tailored to individual goals, whether you want to perform or sing for pleasure.",
+        "Join a community of vocalists who have grown under our expert guidance. Book a free demo to start your Indian vocal journey."
+      ],
+      "learningPoints": [
+        "Voice training and pitch accuracy",
+        "Indian music theory and notation",
+        "Classical and devotional repertoire",
+        "Film song and contemporary styles",
+        "Microphone technique and recording basics",
+        "Performance and stage confidence"
+      ],
+      "whoCanJoin": [
+        "Kids (6+ years)",
+        "Adults",
+        "Beginners",
+        "Intermediate learners"
+      ],
+      "teachers": [
+        {
+          "name": "Megha Nair",
+          "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&h=400&auto=format&fit=crop",
+          "bio": "Indian vocal coach covering classical, devotional, and film repertoire with emphasis on expression.",
+          "experience": "10+ years",
+          "achievements": [
+            "All-India Radio featured artist",
+            "Choir director for cultural festivals"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "western-vocal-classes-bangalore",
+      "title": "Western Vocal Classes in Bangalore",
+      "description": "Develop your singing voice with our Western vocal classes in Bangalore. From pop to rock and jazz, learn proper technique, breath control, and performance skills.",
+      "image": "https://images.unsplash.com/photo-1738658024539-a8d1527fa8e8?q=80&w=1674&auto=format&fit=crop",
+      "metaDescription": "Join the best Western vocal classes in Bangalore at Johnson's Academy. Learn from expert trainers. Book a free demo today.",
+      "about": [
+        "Our Western vocal classes in Bangalore teach contemporary singing techniques used in pop, rock, R&B, and jazz. Students learn healthy vocal habits, range expansion, and stage presence.",
+        "We cover breathing exercises, vocal warm-ups, pitch training, and repertoire building. The curriculum adapts to your musical preferences and skill level.",
+        "Whether you dream of performing or singing for fun, our structured approach helps you reach your goals. Book a free demo to experience our teaching style."
+      ],
+      "learningPoints": [
+        "Breath control and vocal support",
+        "Vocal range expansion and flexibility",
+        "Pitch accuracy and ear training",
+        "Pop, rock, and contemporary repertoire",
+        "Microphone and recording techniques",
+        "Stage presence and performance skills"
+      ],
+      "whoCanJoin": [
+        "Kids (6+ years)",
+        "Adults",
+        "Beginners",
+        "Intermediate learners"
+      ],
+      "teachers": [
+        {
+          "name": "Diya Thomas",
+          "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&h=400&auto=format&fit=crop",
+          "bio": "Contemporary vocal coach specializing in pop, rock, and jazz with a focus on healthy technique.",
+          "experience": "8+ years",
+          "achievements": [
+            "Studio session vocalist",
+            "Vocal director for college music productions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "violin-classes-bangalore",
+      "title": "Violin Classes in Bangalore",
+      "description": "Learn the violin with precision and passion at Johnson's Academy. Our violin classes in Bangalore offer classical training and contemporary techniques for all levels.",
+      "image": "https://images.unsplash.com/photo-1725673853787-aae551326d9f?q=80&w=1548&auto=format&fit=crop",
+      "metaDescription": "Join the best violin classes in Bangalore at Johnson's Academy. Learn from expert trainers. Book a free demo today.",
+      "about": [
+        "Our violin classes in Bangalore focus on proper posture, bowing technique, and intonation. Students progress from simple melodies to complex pieces across classical and contemporary genres.",
+        "We emphasize disciplined practice and musical expression. The curriculum includes scales, études, and performance pieces suited to each student's level.",
+        "From beginners holding the violin for the first time to advanced players refining their craft, Johnson's Academy provides the guidance you need."
+      ],
+      "learningPoints": [
+        "Correct posture, hold, and bowing technique",
+        "Scales, arpeggios, and intonation",
+        "Reading notation and sight-reading",
+        "Classical and contemporary repertoire",
+        "Vibrato and expression techniques",
+        "Solo and ensemble performance"
+      ],
+      "whoCanJoin": [
+        "Kids (6+ years)",
+        "Adults",
+        "Beginners",
+        "Intermediate learners"
+      ],
+      "teachers": [
+        {
+          "name": "Sneha Iyer",
+          "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&h=400&auto=format&fit=crop",
+          "bio": "Violinist and strings educator with a classical foundation and ensemble experience.",
+          "experience": "11+ years",
+          "achievements": [
+            "Orchestra section leader",
+            "Trinity strings syllabus mentor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dance-classes-bangalore",
+      "title": "Dance Classes in Bangalore",
+      "description": "Express yourself through movement at Johnson's Academy. Our dance classes in Bangalore cover Western and contemporary styles for kids and adults of all skill levels.",
+      "image": "https://images.unsplash.com/photo-1537365587684-f490102e1225?q=80&w=2071&auto=format&fit=crop",
+      "metaDescription": "Join the best dance classes in Bangalore at Johnson's Academy. Western and contemporary dance. Learn from expert trainers. Book a free demo today.",
+      "about": [
+        "Our dance classes in Bangalore blend Western dance forms with contemporary choreography. Students develop rhythm, coordination, flexibility, and performance confidence.",
+        "We offer a fun, energetic environment where dancers of all ages can learn and grow. From basic steps to choreographed routines, our curriculum keeps you engaged.",
+        "Perfect for fitness, creativity, and stage performance. Book a free demo to experience the energy of our dance studio."
+      ],
+      "learningPoints": [
+        "Basic dance steps and footwork",
+        "Rhythm and musicality",
+        "Western and contemporary techniques",
+        "Choreography and routine building",
+        "Flexibility and body conditioning",
+        "Stage performance and confidence"
+      ],
+      "whoCanJoin": [
+        "Kids (5+ years)",
+        "Adults",
+        "Beginners",
+        "Intermediate learners"
+      ],
+      "teachers": [
+        {
+          "name": "Priya Menon",
+          "image": "https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=400&h=400&auto=format&fit=crop",
+          "bio": "Choreographer and dance instructor in Western and contemporary styles for youth and adults.",
+          "experience": "9+ years",
+          "achievements": [
+            "Showcase choreographer for city-wide events",
+            "Certified in contemporary dance pedagogy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "art-classes-bangalore",
+      "title": "Art Classes in Bangalore",
+      "description": "Unlock your creativity with our art classes in Bangalore. From drawing fundamentals to painting and mixed media, we nurture artistic expression for all ages.",
+      "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=800&auto=format&fit=crop",
+      "metaDescription": "Join the best art classes in Bangalore at Johnson's Academy. Visual art and creative expression. Learn from expert trainers. Book a free demo today.",
+      "about": [
+        "Our art classes in Bangalore cover drawing, painting, and various creative techniques. Students learn composition, color theory, and different mediums in a supportive studio environment.",
+        "The curriculum progresses from basic shapes and lines to more complex works. We encourage individual style while building strong foundational skills.",
+        "Whether you're a child exploring art or an adult rediscovering creativity, our classes are designed to inspire and develop your artistic voice."
+      ],
+      "learningPoints": [
+        "Drawing fundamentals and sketching",
+        "Color theory and composition",
+        "Painting techniques (watercolor, acrylic)",
+        "Shading, perspective, and proportions",
+        "Mixed media and creative expression",
+        "Portfolio development and display"
+      ],
+      "whoCanJoin": [
+        "Kids (5+ years)",
+        "Adults",
+        "Beginners",
+        "Intermediate learners"
+      ],
+      "teachers": [
+        {
+          "name": "Rahul Verma",
+          "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&h=400&auto=format&fit=crop",
+          "bio": "Visual artist and educator teaching drawing, painting, and mixed media in a studio setting.",
+          "experience": "7+ years",
+          "achievements": [
+            "Group exhibitions in Bangalore",
+            "Art foundation program lead instructor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "karate-classes-bangalore",
+      "title": "Karate Classes in Bangalore",
+      "description": "Build strength, discipline, and confidence with our karate classes in Bangalore. Our certified instructors teach traditional martial arts in a safe, structured environment.",
+      "image": "https://images.unsplash.com/photo-1515025617920-e1e674b5033c?q=80&w=2144&auto=format&fit=crop",
+      "metaDescription": "Join the best karate classes in Bangalore at Johnson's Academy. Martial arts for discipline and fitness. Learn from expert trainers. Book a free demo today.",
+      "about": [
+        "Our karate classes in Bangalore focus on discipline, respect, and physical fitness. Students learn basic stances, strikes, blocks, and katas in a progressive, age-appropriate curriculum.",
+        "Karate improves focus, coordination, and self-confidence. We welcome both kids and adults, from complete beginners to those advancing through belt levels.",
+        "Join Johnson's Academy for a balanced approach to martial arts training. Book a free demo to experience our dojo."
+      ],
+      "learningPoints": [
+        "Basic stances, blocks, and strikes",
+        "Kata (forms) and sequences",
+        "Self-defense fundamentals",
+        "Discipline and focus building",
+        "Physical fitness and conditioning",
+        "Belt progression and grading"
+      ],
+      "whoCanJoin": [
+        "Kids (5+ years)",
+        "Adults",
+        "Beginners",
+        "Intermediate learners"
+      ],
+      "teachers": [
+        {
+          "name": "Vikram Singh",
+          "image": "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?q=80&w=400&h=400&auto=format&fit=crop",
+          "bio": "Karate black belt instructor emphasizing discipline, fitness, and safe progression through belt levels.",
+          "experience": "15+ years",
+          "achievements": [
+            "State-level kata medalist",
+            "Certified youth martial arts coach"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import CoursesSection from "@/components/CoursesSection";
 import BranchesSection from "@/components/BranchesSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import AppShowcaseSection from "@/components/app-showcase/AppShowcaseSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import QuoteSection from "@/components/QuoteSection";
 import VideoSection from "@/components/VideoSection";
@@ -20,6 +21,7 @@ export default function Home() {
       <main className="flex flex-1 flex-col">
         <CoursesSection />
         <WhyChooseUs />
+        <AppShowcaseSection />
         <BranchesSection />
         <TestimonialsSection />
         <QuoteSection />
