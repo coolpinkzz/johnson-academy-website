@@ -67,7 +67,7 @@ export default function ContactForm({ courses, branches }: Props) {
         >
           <option value="">Select a course</option>
           {courses.map((course) => (
-            <option key={course.slug} value={course.title}>
+            <option key={course.id} value={course.title}>
               {course.title}
             </option>
           ))}
