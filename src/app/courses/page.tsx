@@ -7,7 +7,7 @@ import CoursesMarketplace from "@/components/courses/CoursesMarketplace";
 const SITE_URL = "https://johnsonsacademy.com";
 
 export const metadata: Metadata = {
-  title: "Music, Dance, Art & Karate Courses in Bangalore",
+  title: "Music, Dance, Art and Karate Courses in Bangalore",
   description:
     "Explore guitar, keyboard, drums, violin, vocal, dance, art, and karate classes at Johnson's Academy Bangalore. Compare courses and book a free demo.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "Johnson Academy",
   ],
   openGraph: {
-    title: "Johnson's Academy Courses - Music, Dance, Art & Karate",
+    title: "Johnson's Academy Courses - Music, Dance, Art and Karate",
     description:
       "Explore music, dance, art, and karate courses at Johnson's Academy. Expert trainers. Book a free demo.",
     type: "website",

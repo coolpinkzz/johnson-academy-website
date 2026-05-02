@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Ashish Johnson",
   ],
   openGraph: {
-    title: "About Johnson's Academy - Music, Dance & Arts in Bangalore",
+    title: "About Johnson's Academy - Music, Dance and Arts in Bangalore",
     description:
       "Founded in 2017 in Bengaluru. 1000+ students trained. Expert faculty, premium facilities. Discover our story and commitment to the arts.",
     type: "website",

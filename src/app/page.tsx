@@ -17,7 +17,7 @@ import {
 import { SITE_ORIGIN } from "@/lib/seo/site";
 import type { Metadata } from "next";
 
-const homeTitle = "Best Music & Dance Academy in Bangalore";
+const homeTitle = "Best Music and Dance Academy in Bangalore";
 const homeDescription =
   "Join Johnson's Academy for expert-led music, dance, art, and karate classes in Bangalore. Flexible batches for kids and adults. Book a free demo class today.";
 
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Johnson's Academy Bangalore - Music, Dance, Art & Karate Classes",
+    title: "Johnson's Academy Bangalore - Music, Dance, Art and Karate Classes",
     description:
       "Expert-led classes with structured learning, stage performance exposure, and flexible batches in Bangalore.",
     url: "/",
