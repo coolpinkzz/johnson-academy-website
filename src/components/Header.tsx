@@ -1,6 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { CONTACT } from "@/lib/seo/site";
+
+const CONTACT_TEL = `tel:${CONTACT.telephone}`;
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -11,13 +14,18 @@ const navLinks = [
   { label: "Testimonials", href: "/#testimonials" },
 ];
 
-export default function Header({ transparent = false }: { transparent?: boolean }) {
+export default function Header({
+  transparent = false,
+}: {
+  transparent?: boolean;
+}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolledPastHero, setScrolledPastHero] = useState(false);
 
   useEffect(() => {
     if (!transparent) return;
-    const handleScroll = () => setScrolledPastHero(window.scrollY > window.innerHeight * 0.6);
+    const handleScroll = () =>
+      setScrolledPastHero(window.scrollY > window.innerHeight * 0.6);
     handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -38,7 +46,7 @@ export default function Header({ transparent = false }: { transparent?: boolean 
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <a href="/" className="flex items-center gap-2">
           <img
-            src="/logo.svg"
+            src="/logo.png"
             alt="Johnson Academy"
             className="h-10 w-auto object-contain"
           />
@@ -61,8 +69,9 @@ export default function Header({ transparent = false }: { transparent?: boolean 
 
         <div className="flex items-center gap-4">
           <a
-            href="/#contact"
+            href={CONTACT_TEL}
             className="hidden sm:inline-flex items-center justify-center rounded-2xl bg-primary px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary/90 hover:shadow-primary/30"
+            aria-label={`Call us at ${CONTACT.telephone}`}
           >
             Contact us
           </a>
@@ -101,7 +110,9 @@ export default function Header({ transparent = false }: { transparent?: boolean 
       {mobileMenuOpen && (
         <div
           className={`md:hidden px-4 py-4 ${
-            isTransparent ? "border-t border-white/10 bg-black/90 backdrop-blur-sm" : "border-t border-white/10"
+            isTransparent
+              ? "border-t border-white/10 bg-black/90 backdrop-blur-sm"
+              : "border-t border-white/10"
           }`}
         >
           <nav className="flex flex-col gap-2">
@@ -116,8 +127,9 @@ export default function Header({ transparent = false }: { transparent?: boolean 
               </a>
             ))}
             <a
-              href="/#contact"
+              href={CONTACT_TEL}
               className="mt-2 rounded-2xl bg-primary px-4 py-3 text-center font-semibold text-white"
+              aria-label={`Call us at ${CONTACT.telephone}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact us

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CoursePageLayout from "@/components/CoursePageLayout";
 import AboutStatsSection from "@/components/AboutStatsSection";
-import { SITE_ORIGIN } from "@/lib/seo/site";
+import { SITE_ORIGIN, CONTACT } from "@/lib/seo/site";
 
 export const metadata: Metadata = {
   title: "About Johnson's Academy Bangalore",
@@ -326,8 +326,9 @@ export default function AboutPage() {
               See Courses
             </Link>
             <Link
-              href="/#contact"
+              href={`tel:${CONTACT.telephone}`}
               className="inline-flex items-center justify-center rounded-2xl border border-white/20 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-white/10"
+              aria-label={`Call us at ${CONTACT.telephone}`}
             >
               Contact Us
             </Link>

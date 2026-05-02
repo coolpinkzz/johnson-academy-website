@@ -110,7 +110,7 @@ export default function AppPromoSlide({
           </div>
         </div>
 
-        <div className="order-2 flex min-h-[270px] min-w-0 items-center justify-center overflow-hidden sm:min-h-[300px] lg:min-h-[280px] lg:justify-end">
+        <div className="order-2 hidden min-h-[280px] min-w-0 items-center justify-center overflow-hidden lg:flex lg:justify-end">
           <div className="relative flex w-full max-w-[32rem] items-center justify-center gap-2 sm:gap-4 lg:max-w-[34rem]">
             {content.mockups.map((mock, index) => (
               <figure

@@ -16,8 +16,8 @@ const AUTOPLAY_MS = 8000;
 const stats = [
   {
     value: 700,
-    suffix: "+",
-    label: "Students Trained",
+    suffix: " +",
+    label: "Students",
     icon: (
       <svg
         className="h-5 w-5"
@@ -119,10 +119,7 @@ function AnimatedStatCard({ stat }: { stat: (typeof stats)[number] }) {
             {stat.label}
           </p>
           {isRating && (
-            <div
-              className="mt-1.5 flex gap-0.5 text-amber-400/85"
-              aria-hidden
-            >
+            <div className="mt-1.5 flex gap-0.5 text-amber-400/85" aria-hidden>
               {[0, 1, 2, 3, 4].map((i) => (
                 <svg
                   key={i}
@@ -166,28 +163,35 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
   const isAffiliationSlide = activeSlide.kind === "affiliation-promo";
 
   const imageSlides = useMemo(
-    () => slides.filter((s): s is Extract<HeroSlide, { kind: "image" }> => s.kind === "image"),
-    [slides]
+    () =>
+      slides.filter(
+        (s): s is Extract<HeroSlide, { kind: "image" }> => s.kind === "image",
+      ),
+    [slides],
   );
 
   const appSlide = useMemo(
-    () => slides.find((s): s is Extract<HeroSlide, { kind: "app-promo" }> => s.kind === "app-promo"),
-    [slides]
+    () =>
+      slides.find(
+        (s): s is Extract<HeroSlide, { kind: "app-promo" }> =>
+          s.kind === "app-promo",
+      ),
+    [slides],
   );
   const affiliationSlide = useMemo(
     () =>
       slides.find(
         (s): s is Extract<HeroSlide, { kind: "affiliation-promo" }> =>
-          s.kind === "affiliation-promo"
+          s.kind === "affiliation-promo",
       ),
-    [slides]
+    [slides],
   );
 
   const go = useCallback(
     (dir: -1 | 1) => {
       setActive((i) => (i + dir + count) % count);
     },
-    [count]
+    [count],
   );
 
   const goTo = useCallback((index: number) => {
@@ -241,7 +245,7 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
     <section
       ref={sectionRef}
       tabIndex={0}
-      className="relative h-dvh max-h-dvh min-h-0 w-full overflow-hidden outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4 focus-visible:ring-offset-black"
+      className="relative h-auto min-h-0 w-full overflow-hidden outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4 focus-visible:ring-offset-black max-sm:max-h-none sm:h-dvh sm:max-h-dvh"
       aria-labelledby="hero-heading"
       aria-roledescription="carousel"
     >
@@ -302,8 +306,8 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
         aria-hidden={isImageSlide}
       />
 
-      <div className="relative z-20 flex h-full min-h-0 flex-col pt-[4.5rem] sm:pt-24">
-        <div className="mx-auto flex min-h-0 w-full max-w-[1200px] flex-1 flex-col justify-center px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+      <div className="relative z-20 flex min-h-0 flex-col pt-[4.5rem] max-sm:h-auto sm:h-full sm:pt-24">
+        <div className="mx-auto flex min-h-0 w-full max-w-[1200px] flex-col justify-start px-4 py-6 max-sm:flex-none sm:flex-1 sm:justify-center sm:px-6 sm:py-8 lg:px-8">
           <div className="relative w-full min-h-0">
             <div
               className={`transition-opacity ${transitionClass} ${
@@ -410,7 +414,10 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
           >
             <ChevronLeft className="h-5 w-5" strokeWidth={2} aria-hidden />
           </button>
-          <div className="flex items-center gap-2" aria-label="Slide indicators">
+          <div
+            className="flex items-center gap-2"
+            aria-label="Slide indicators"
+          >
             {slides.map((_, i) => (
               <button
                 key={i}
@@ -418,9 +425,7 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
                 onClick={() => goTo(i)}
                 aria-current={i === active || undefined}
                 className={`h-2 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
-                  i === active
-                    ? `w-8 ${dotActiveClass}`
-                    : `w-2 ${dotIdleClass}`
+                  i === active ? `w-8 ${dotActiveClass}` : `w-2 ${dotIdleClass}`
                 } focus-visible:ring-offset-black`}
                 aria-label={`Go to slide ${i + 1} of ${count}`}
               />

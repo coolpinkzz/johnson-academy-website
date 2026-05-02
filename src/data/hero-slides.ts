@@ -77,7 +77,7 @@ export const heroSlides: HeroSlide[] = [
     kind: "app-promo",
     key: "mobile-app",
     brandName: "Johnson's Academy",
-    brandLogoSrc: "/logo.svg",
+    brandLogoSrc: "/logo.png",
     brandLogoAlt: "Johnson Academy logo",
     headingLine1: "Learn music",
     headingLine2Before: "On our ",
@@ -85,8 +85,7 @@ export const heroSlides: HeroSlide[] = [
     headingLine2After: "",
     supportingText:
       "Practice guitar, keyboard, drums, and more with our online music learning app—lesson-friendly, built for busy learners in Bangalore and beyond.",
-    appStoreUrl:
-      "https://apps.apple.com/app/johnson-academy/id6753088790",
+    appStoreUrl: "https://apps.apple.com/app/johnson-academy/id6753088790",
     playStoreUrl:
       "https://play.google.com/store/apps/details?id=com.johnsonacademy.app",
     appStoreLabel: "Download on the App Store",
@@ -129,13 +128,13 @@ export const heroSlides: HeroSlide[] = [
       {
         name: "RSL Awards (UK)",
         logoSrc:
-          "https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Rockschool_Logo.svg/640px-Rockschool_Logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Rockschool_logo.png/640px-Rockschool_logo.png.png",
         logoAlt: "RSL Awards United Kingdom logo",
       },
       {
         name: "Trinity College London",
         logoSrc:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Trinity_College_London_logo.svg/640px-Trinity_College_London_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Trinity_College_London_logo.png/640px-Trinity_College_London_logo.png.png",
         logoAlt: "Trinity College London logo",
       },
     ],

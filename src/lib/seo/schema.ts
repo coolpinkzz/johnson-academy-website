@@ -23,9 +23,9 @@ export function buildOrganizationSchema(): JsonLdNode {
     url: SITE_ORIGIN,
     logo: {
       "@type": "ImageObject",
-      url: absoluteUrl("/logo.svg"),
+      url: absoluteUrl("/logo.png"),
     },
-    image: absoluteUrl("/logo.svg"),
+    image: absoluteUrl("/logo.png"),
     description: SITE_DESCRIPTION,
     foundingDate: FOUNDING_DATE,
     founder: { "@id": `${SITE_ORIGIN}/about/#founder` },

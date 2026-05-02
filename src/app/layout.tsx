@@ -22,14 +22,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_ORIGIN),
   title: {
-    default: "Johnson's Academy | Music, Dance, Art and Karate Classes in Bangalore",
+    default:
+      "Johnson's Academy | Music, Dance, Art and Karate Classes in Bangalore",
     template: "%s | Johnson's Academy",
   },
-  description: "Learn Guitar, Keyboard, Drums, Violin, Dance and Art at Johnson Academy. Book your free demo class today.",
+  description:
+    "Learn Guitar, Keyboard, Drums, Violin, Dance and Art at Johnson Academy. Book your free demo class today.",
   icons: {
-    icon: "/logo.svg",
-    shortcut: "/logo.svg",
-    apple: "/logo.svg",
+    icon: [{ url: "/logo.png", type: "image/png" }],
+    shortcut: "/logo.png",
+    apple: [{ url: "/logo.png", type: "image/png" }],
   },
 };
 
@@ -48,7 +50,10 @@ export default function RootLayout({
           id="jsonld-organization-website"
           schema={mergeSchemas(
             buildOrganizationSchema(),
-            buildWebSiteSchema({ name: SITE_NAME, description: SITE_DESCRIPTION }),
+            buildWebSiteSchema({
+              name: SITE_NAME,
+              description: SITE_DESCRIPTION,
+            }),
             buildFounderPersonSchema(),
           )}
         />
