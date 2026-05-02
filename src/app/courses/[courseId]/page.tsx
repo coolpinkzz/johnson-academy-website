@@ -10,9 +10,15 @@ import TeacherProfile from "@/components/course-detail/TeacherProfile";
 import LearningSection from "@/components/course-detail/LearningSection";
 import EligibilitySection from "@/components/course-detail/EligibilitySection";
 import CTASection from "@/components/course-detail/CTASection";
+import { JsonLdScript, mergeSchemas } from "@/lib/seo/jsonLd";
+import {
+  buildBreadcrumbListSchema,
+  buildCourseSchema,
+  buildWebPageSchema,
+} from "@/lib/seo/schema";
+import { absoluteUrl } from "@/lib/seo/site";
 
 const ACADEMY_NAME = "Johnson's Academy";
-const SITE_URL = "https://johnsonsacademy.com";
 
 type Props = {
   params: Promise<{ courseId: string }>;
@@ -26,17 +32,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { courseId } = await params;
   const course = getCourseById(courseId);
   if (!course) return {};
+  const coursePath = `/courses/${course.id}`;
+  const courseUrl = absoluteUrl(coursePath);
   return {
     title: `${course.title} Classes in Bangalore`,
     description: course.metaDescription,
     alternates: {
-      canonical: `${SITE_URL}/courses/${course.id}`,
+      canonical: courseUrl,
     },
     openGraph: {
       title: `${course.title} | ${ACADEMY_NAME}`,
       description: course.metaDescription,
       type: "article",
-      url: `${SITE_URL}/courses/${course.id}`,
+      url: courseUrl,
       images: course.image ? [{ url: course.image, alt: course.title }] : undefined,
     },
   };
@@ -47,8 +55,31 @@ export default async function CourseDetailPage({ params }: Props) {
   const course = getCourseById(courseId);
   if (!course) notFound();
 
+  const coursePath = `/courses/${course.id}`;
+  const pageUrl = absoluteUrl(coursePath);
+  const breadcrumbId = `${pageUrl}#breadcrumb`;
+  const courseSchema = mergeSchemas(
+    buildWebPageSchema({
+      path: coursePath,
+      url: pageUrl,
+      name: `${course.title} Classes in Bangalore`,
+      description: course.metaDescription,
+      breadcrumb: { "@id": breadcrumbId },
+    }),
+    buildBreadcrumbListSchema({
+      id: breadcrumbId,
+      items: [
+        { name: "Home", path: "/" },
+        { name: "Courses", path: "/courses" },
+        { name: course.title, path: coursePath },
+      ],
+    }),
+    buildCourseSchema(course, coursePath),
+  );
+
   return (
     <CoursePageLayout>
+      <JsonLdScript id={`jsonld-course-${course.id}`} schema={courseSchema} />
       <CourseHeader
         title={course.title}
         description={course.description}

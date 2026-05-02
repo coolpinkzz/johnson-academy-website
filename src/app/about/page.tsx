@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CoursePageLayout from "@/components/CoursePageLayout";
 import AboutStatsSection from "@/components/AboutStatsSection";
-
-const SITE_URL = "https://johnsonsacademy.com";
+import { SITE_ORIGIN } from "@/lib/seo/site";
 
 export const metadata: Metadata = {
   title: "About Johnson's Academy Bangalore",
@@ -22,80 +21,16 @@ export const metadata: Metadata = {
     description:
       "Founded in 2017 in Bengaluru. 1000+ students trained. Expert faculty, premium facilities. Discover our story and commitment to the arts.",
     type: "website",
-    url: `${SITE_URL}/about`,
+    url: `${SITE_ORIGIN}/about`,
   },
   alternates: {
-    canonical: `${SITE_URL}/about`,
+    canonical: `${SITE_ORIGIN}/about`,
   },
 };
-
-function AboutJsonLd() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "EducationalOrganization",
-        "@id": `${SITE_URL}/about/#organization`,
-        name: "Johnson's Academy",
-        url: SITE_URL,
-        logo: `${SITE_URL}/logo.svg`,
-        description:
-          "Johnson's Academy is a performing arts academy in Bangalore offering music, dance, art, and karate training. Founded in 2017, we have trained over 1000 students.",
-        foundingDate: "2017",
-        founder: {
-          "@type": "Person",
-          name: "Ashish Johnson",
-          jobTitle: "Founder",
-        },
-        address: [
-          {
-            "@type": "PostalAddress",
-            streetAddress:
-              "189, 5th Main Rd, Vysya Bank Colony, Shantiniketan Layout, Arekere",
-            addressLocality: "Bengaluru",
-            addressRegion: "Karnataka",
-            postalCode: "560076",
-          },
-          {
-            "@type": "PostalAddress",
-            streetAddress:
-              "3rd Floor, SS Arcade, DLF Main Rd, above KFC, Bhagyalakshmi Avenue, Rukmaiah Layout, Hulimavu",
-            addressLocality: "Bengaluru",
-            addressRegion: "Karnataka",
-            postalCode: "560076",
-          },
-        ],
-        telephone: "+917798347976",
-        email: "info@johnsonsacademy.in",
-      },
-      {
-        "@type": "Person",
-        name: "Ashish Johnson",
-        jobTitle: "Founder",
-        worksFor: {
-          "@id": `${SITE_URL}/about/#organization`,
-        },
-        sameAs: [
-          "https://www.facebook.com/johnsonsacademyblr/",
-          "https://www.instagram.com/johnsonsacademy_blr/",
-          "https://www.youtube.com/@johnsonsacademy8011",
-        ],
-      },
-    ],
-  };
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-    />
-  );
-}
 
 export default function AboutPage() {
   return (
     <CoursePageLayout>
-      <AboutJsonLd />
-
       {/* Hero */}
       <header
         className="relative overflow-hidden bg-black px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24 bg-cover bg-center"

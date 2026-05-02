@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { JsonLdScript, mergeSchemas } from "@/lib/seo/jsonLd";
+import {
+  buildFounderPersonSchema,
+  buildOrganizationSchema,
+  buildWebSiteSchema,
+} from "@/lib/seo/schema";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_ORIGIN } from "@/lib/seo/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://johnsonsacademy.com"),
+  metadataBase: new URL(SITE_ORIGIN),
   title: {
     default: "Johnson's Academy | Music, Dance, Art & Karate Classes in Bangalore",
     template: "%s | Johnson's Academy",
@@ -36,7 +43,17 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-black text-white">{children}</body>
+      <body className="min-h-full flex flex-col bg-black text-white">
+        <JsonLdScript
+          id="jsonld-organization-website"
+          schema={mergeSchemas(
+            buildOrganizationSchema(),
+            buildWebSiteSchema({ name: SITE_NAME, description: SITE_DESCRIPTION }),
+            buildFounderPersonSchema(),
+          )}
+        />
+        {children}
+      </body>
     </html>
   );
 }
