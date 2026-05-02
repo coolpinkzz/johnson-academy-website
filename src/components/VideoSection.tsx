@@ -11,31 +11,18 @@ export default function VideoSection() {
           </p>
         </div>
         <div className="mt-12">
-          <div className="group relative aspect-video overflow-hidden rounded-2xl bg-white/5 border border-white/10">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{
-                backgroundImage: "url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1200&q=80')",
-              }}
+          <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              width={560}
+              height={315}
+              src="https://www.youtube.com/embed/8noNekb84Ro?si=kfUcX-IpJXzf4xCM"
+              title="YouTube video player"
+              frameBorder={0}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             />
-            <div className="absolute inset-0 bg-black/50" />
-            <a
-              href="#"
-              className="absolute inset-0 flex items-center justify-center transition-transform group-hover:scale-105"
-            >
-              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary shadow-xl shadow-primary/40 transition-all group-hover:bg-primary/90 group-hover:shadow-2xl group-hover:shadow-primary/50">
-                <svg
-                  className="ml-1 h-10 w-10 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-            </a>
-            <p className="absolute bottom-4 left-4 right-4 text-center text-sm text-white/80">
-              Click to watch our academy showcase
-            </p>
           </div>
         </div>
       </div>

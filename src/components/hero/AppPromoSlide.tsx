@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Apple, Smartphone } from "lucide-react";
 import type { HeroAppPromoSlide as HeroAppPromoSlideData } from "@/data/hero-slides";
+import { useTouchOrNarrowViewport } from "@/hooks/useTouchOrNarrowViewport";
 import { heroSlideTitleClassName } from "./StandardHeroSlide";
 
 type AppPromoSlideProps = {
@@ -10,11 +13,22 @@ type AppPromoSlideProps = {
   HeadingTag?: "h1" | "h2";
 };
 
+const storeBtnClass =
+  "inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl px-6 py-3 text-sm font-semibold shadow-lg transition-all sm:min-h-[52px]";
+const appStoreInteractiveClass =
+  `${storeBtnClass} bg-white text-black shadow-black/30 hover:scale-[1.02] hover:bg-white/90 active:scale-[0.98]`;
+const appStoreStaticClass = `${storeBtnClass} bg-white text-black shadow-black/30`;
+const playStoreInteractiveClass =
+  `${storeBtnClass} border-2 border-primary bg-primary/15 text-white shadow-primary/20 hover:bg-primary/25 hover:scale-[1.02] active:scale-[0.98]`;
+const playStoreStaticClass = `${storeBtnClass} border-2 border-primary bg-primary/15 text-white shadow-primary/20`;
+
 export default function AppPromoSlide({
   content,
   headingId,
   HeadingTag = "h2",
 }: AppPromoSlideProps) {
+  const storeLinksActive = useTouchOrNarrowViewport();
+
   return (
     <article
       className="relative w-full"
@@ -41,30 +55,58 @@ export default function AppPromoSlide({
           </p>
 
           <div className="mt-8 flex w-full max-w-[42rem] flex-col gap-4 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-6">
-            <Link
-              href={content.appStoreUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-black shadow-lg shadow-black/30 transition-all hover:scale-[1.02] hover:bg-white/90 active:scale-[0.98] sm:min-h-[52px]"
-              aria-label={content.appStoreAriaLabel}
-            >
-              <Apple className="h-5 w-5 shrink-0" strokeWidth={2} aria-hidden />
-              {content.appStoreLabel}
-            </Link>
-            <Link
-              href={content.playStoreUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl border-2 border-primary bg-primary/15 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all hover:bg-primary/25 hover:scale-[1.02] active:scale-[0.98] sm:min-h-[52px]"
-              aria-label={content.playStoreAriaLabel}
-            >
-              <Smartphone
-                className="h-5 w-5 shrink-0"
-                strokeWidth={2}
-                aria-hidden
-              />
-              {content.playStoreLabel}
-            </Link>
+            {storeLinksActive ? (
+              <Link
+                href={content.appStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={appStoreInteractiveClass}
+                aria-label={content.appStoreAriaLabel}
+              >
+                <Apple className="h-5 w-5 shrink-0" strokeWidth={2} aria-hidden />
+                {content.appStoreLabel}
+              </Link>
+            ) : (
+              <span
+                className={`${appStoreStaticClass} cursor-default select-none`}
+                aria-disabled="true"
+                title="Open this page on a phone or tablet to download the app"
+                aria-label={`${content.appStoreLabel}. Use a phone or tablet to open the link.`}
+              >
+                <Apple className="h-5 w-5 shrink-0" strokeWidth={2} aria-hidden />
+                {content.appStoreLabel}
+              </span>
+            )}
+            {storeLinksActive ? (
+              <Link
+                href={content.playStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={playStoreInteractiveClass}
+                aria-label={content.playStoreAriaLabel}
+              >
+                <Smartphone
+                  className="h-5 w-5 shrink-0"
+                  strokeWidth={2}
+                  aria-hidden
+                />
+                {content.playStoreLabel}
+              </Link>
+            ) : (
+              <span
+                className={`${playStoreStaticClass} cursor-default select-none`}
+                aria-disabled="true"
+                title="Open this page on a phone or tablet to download the app"
+                aria-label={`${content.playStoreLabel}. Use a phone or tablet to open the link.`}
+              >
+                <Smartphone
+                  className="h-5 w-5 shrink-0"
+                  strokeWidth={2}
+                  aria-hidden
+                />
+                {content.playStoreLabel}
+              </span>
+            )}
           </div>
         </div>
 

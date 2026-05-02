@@ -85,8 +85,10 @@ export const heroSlides: HeroSlide[] = [
     headingLine2After: "",
     supportingText:
       "Practice guitar, keyboard, drums, and more with our online music learning app—lesson-friendly, built for busy learners in Bangalore and beyond.",
-    appStoreUrl: "https://apps.apple.com/",
-    playStoreUrl: "https://play.google.com/store",
+    appStoreUrl:
+      "https://apps.apple.com/app/johnson-academy/id6753088790",
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.johnsonacademy.app",
     appStoreLabel: "Download on the App Store",
     playStoreLabel: "Get it on Google Play",
     appStoreAriaLabel: "Download Johnson Academy on the App Store",
