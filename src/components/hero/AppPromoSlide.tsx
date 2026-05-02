@@ -36,11 +36,11 @@ export default function AppPromoSlide({
             </span>
           </HeadingTag>
 
-          <p className="mt-4 max-w-xl text-base text-white/80 sm:mt-6 sm:text-lg lg:text-xl">
+          <p className="mt-4 max-w-[62ch] text-[clamp(1rem,1.5vw,1.25rem)] leading-relaxed text-white/80 sm:mt-6">
             {content.supportingText}
           </p>
 
-          <div className="mt-8 flex w-full flex-col gap-4 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-6">
+          <div className="mt-8 flex w-full max-w-[42rem] flex-col gap-4 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-6">
             <Link
               href={content.appStoreUrl}
               target="_blank"
@@ -68,8 +68,8 @@ export default function AppPromoSlide({
           </div>
         </div>
 
-        <div className="order-2 flex min-h-[270px] items-center justify-center gap-3 sm:min-h-[300px] sm:gap-4 lg:min-h-[280px] lg:justify-end">
-          <div className="relative flex w-full max-w-md items-center justify-center gap-1.5 sm:max-w-none sm:gap-4 lg:max-w-none">
+        <div className="order-2 flex min-h-[270px] min-w-0 items-center justify-center overflow-hidden sm:min-h-[300px] lg:min-h-[280px] lg:justify-end">
+          <div className="relative flex w-full max-w-[32rem] items-center justify-center gap-2 sm:gap-4 lg:max-w-[34rem]">
             {content.mockups.map((mock, index) => (
               <figure
                 key={`${mock.src}-${index}`}

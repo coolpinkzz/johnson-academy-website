@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import CoursePageLayout from "@/components/CoursePageLayout";
 
 export const metadata: Metadata = {
-  title: "Refund & Cancellation Policy | Johnson's Academy",
+  title: "Refund and Cancellation Policy - Johnson's Academy",
   description:
-    "Johnson's Academy refund and cancellation policy. Learn about our demo class policy, fee payment, class rescheduling, and refund conditions.",
+    "Read Johnson's Academy refund and cancellation policy, including fee payments, class rescheduling, demo classes, and refund eligibility.",
 };
 
 export default function RefundPolicyPage() {

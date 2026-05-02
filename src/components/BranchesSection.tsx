@@ -1,47 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Navigation, Star, Music, Calendar } from "lucide-react";
-
-const branches = [
-  {
-    id: "arekere",
-    name: "Arekere Branch",
-    address:
-      "Vysya Bank Colony, Shantiniketan Layout, Arekere, Bengaluru, Karnataka - 560076",
-    landmark: "Near Arekere Lake",
-    mapLink: "https://share.google/pqvAQTeNf1lAeT0ne",
-    seoLine: "Music & Dance Classes in Arekere",
-    image:
-      "https://images.unsplash.com/photo-1524578271613-d550eacf6090?w=600&q=80",
-    badge: "Popular Branch",
-  },
-  {
-    id: "hulimavu",
-    name: "Hulimavu Branch",
-    address: "SS Arcade, DLF Main Rd, Hulimavu, Bengaluru, Karnataka - 560076",
-    landmark: "Near Hulimavu Lake",
-    mapLink: "https://share.google/dTQU1pmIZCAI8kKUp",
-    seoLine: "Music & Dance Classes in Hulimavu",
-    image:
-      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&q=80",
-    badge: "New Batches Open",
-  },
-  {
-    id: "vijaya-bank",
-    name: "Vijaya Bank Layout Branch",
-    address:
-      "Sumukha Greenville, Johnson's Academy, VijayaBank Layout, Bengaluru, Karnataka - 560076",
-    landmark: "Near Vijaya Bank Layout Main Rd",
-    mapLink: "https://share.google/Odqg3ozY0QjjfCt5p",
-    seoLine: "Music & Dance Classes in Vijaya Bank Layout",
-    image:
-      "https://images.unsplash.com/photo-1529963183134-61a90db47eaf?w=600&q=80",
-    badge: null,
-  },
-];
-
-const coursesList = "Guitar • Keyboard • Drums • Violin • Dance • Art";
+import { BRANCH_COURSES_LINE, branches } from "@/data/branches";
 
 export default function BranchesSection() {
   return (
@@ -66,8 +28,10 @@ export default function BranchesSection() {
               key={branch.id}
               className="group flex flex-col overflow-hidden rounded-2xl border border-gray-800 bg-[#111111] p-0 transition-all duration-300 hover:scale-[1.02] hover:border-primary/30 hover:shadow-xl hover:shadow-primary/10"
             >
-              {/* Top Section - Image & Badge */}
-              <div className="relative aspect-16/10 overflow-hidden">
+              <Link
+                href={`/our-branches/${branch.id}`}
+                className="relative aspect-16/10 overflow-hidden"
+              >
                 <Image
                   src={branch.image}
                   alt={branch.seoLine}
@@ -80,13 +44,14 @@ export default function BranchesSection() {
                     {branch.badge}
                   </span>
                 )}
-              </div>
+              </Link>
 
-              {/* Middle Section */}
               <div className="flex flex-1 flex-col p-6">
-                <h3 className="text-xl font-semibold text-white">
-                  {branch.name}
-                </h3>
+                <Link href={`/our-branches/${branch.id}`}>
+                  <h3 className="text-xl font-semibold text-white hover:text-primary transition-colors">
+                    {branch.name}
+                  </h3>
+                </Link>
 
                 <div className="mt-4 grid grid-cols-[2.75rem_1fr] gap-x-3 gap-y-1">
                   <div className="flex justify-center pt-0.5">
@@ -101,15 +66,11 @@ export default function BranchesSection() {
                     <p className="text-sm leading-relaxed text-gray-300">
                       {branch.address}
                     </p>
-                    {branch.landmark && (
-                      <p className="mt-1.5 text-xs leading-snug text-gray-500">
-                        <span className="font-medium text-gray-400">
-                          Landmark
-                        </span>
-                        <span className="text-gray-600"> · </span>
-                        {branch.landmark}
-                      </p>
-                    )}
+                    <p className="mt-1.5 text-xs leading-snug text-gray-500">
+                      <span className="font-medium text-gray-400">Landmark</span>
+                      <span className="text-gray-600"> · </span>
+                      {branch.landmark}
+                    </p>
                   </div>
 
                   <div className="col-span-2 mt-1 border-t border-gray-800/80 pt-3">
@@ -119,7 +80,6 @@ export default function BranchesSection() {
                   </div>
                 </div>
 
-                {/* Info rows */}
                 <div className="mt-4 space-y-3 border-t border-gray-800 pt-4">
                   <div className="grid grid-cols-[2.75rem_1fr] items-center gap-x-3">
                     <div className="flex justify-center">
@@ -131,7 +91,7 @@ export default function BranchesSection() {
                       </span>
                     </div>
                     <p className="text-sm leading-snug text-gray-300">
-                      {coursesList}
+                      {BRANCH_COURSES_LINE}
                     </p>
                   </div>
                   <div className="grid grid-cols-[2.75rem_1fr] items-center gap-x-3">
@@ -143,9 +103,7 @@ export default function BranchesSection() {
                         <Calendar className="h-4 w-4" strokeWidth={2} />
                       </span>
                     </div>
-                    <p className="text-sm text-gray-300">
-                      Weekday &amp; weekend batches
-                    </p>
+                    <p className="text-sm text-gray-300">Weekday &amp; weekend batches</p>
                   </div>
                   <div className="grid grid-cols-[2.75rem_1fr] items-center gap-x-3">
                     <div className="flex justify-center">
@@ -161,7 +119,7 @@ export default function BranchesSection() {
                     </div>
                     <p className="text-sm text-gray-300">
                       <span className="font-semibold tabular-nums text-amber-200/95">
-                        4.8
+                        {branch.rating.toFixed(1)}
                       </span>
                       <span className="text-gray-500"> · </span>
                       <span className="text-gray-400">Google rating</span>
@@ -184,7 +142,6 @@ export default function BranchesSection() {
                   View on map
                 </a>
 
-                {/* CTA Buttons */}
                 <div className="mt-auto flex flex-col gap-3 pt-6 sm:flex-row sm:items-center">
                   <a
                     href="tel:+917798347976"
@@ -192,15 +149,13 @@ export default function BranchesSection() {
                   >
                     Book Demo
                   </a>
-                  <a
-                    href={branch.mapLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href={`/our-branches/${branch.id}`}
                     className="inline-flex items-center justify-center gap-2 rounded-xl border border-gray-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:border-logoBlue/50 hover:bg-logoBlue/10 hover:text-sky-200"
                   >
                     <Navigation className="h-4 w-4 text-logoBlue" strokeWidth={2} />
-                    Get directions
-                  </a>
+                    View details
+                  </Link>
                 </div>
               </div>
             </article>

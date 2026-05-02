@@ -12,6 +12,7 @@ import EligibilitySection from "@/components/course-detail/EligibilitySection";
 import CTASection from "@/components/course-detail/CTASection";
 
 const ACADEMY_NAME = "Johnson's Academy";
+const SITE_URL = "https://johnsonsacademy.com";
 
 type Props = {
   params: Promise<{ courseId: string }>;
@@ -26,8 +27,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const course = getCourseById(courseId);
   if (!course) return {};
   return {
-    title: `${course.title} | ${ACADEMY_NAME}`,
+    title: `${course.title} Classes in Bangalore`,
     description: course.metaDescription,
+    alternates: {
+      canonical: `${SITE_URL}/courses/${course.id}`,
+    },
+    openGraph: {
+      title: `${course.title} | ${ACADEMY_NAME}`,
+      description: course.metaDescription,
+      type: "article",
+      url: `${SITE_URL}/courses/${course.id}`,
+      images: course.image ? [{ url: course.image, alt: course.title }] : undefined,
+    },
   };
 }
 

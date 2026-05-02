@@ -1,3 +1,5 @@
+import { branches } from "@/data/branches";
+
 const footerLinks = [
   { label: "About", href: "/about" },
   { label: "Gallery", href: "/#gallery" },
@@ -87,15 +89,11 @@ export default function Footer() {
                 Contact Us
               </h4>
               <div className="flex flex-col gap-2 text-sm text-muted">
-                <p>
-                  Branch 1: 189, 5th Main Rd, Vysya Bank Colony, Shantiniketan
-                  Layout, Arekere, Bengaluru, Karnataka - 560076
-                </p>
-                <p>
-                  Branch 2: 3rd Floor, SS Arcade, DLF Main Rd, above KFC, next
-                  to KaiRuchi, Bhagyalakshmi Avenue, Rukmaiah Layout, Hulimavu,
-                  Bengaluru, Karnataka - 560076
-                </p>
+                {branches.map((branch, index) => (
+                  <p key={branch.id}>
+                    Branch {index + 1}: {branch.address}
+                  </p>
+                ))}
                 <a
                   href="tel:+917798347976"
                   className="hover:text-primary transition-colors"

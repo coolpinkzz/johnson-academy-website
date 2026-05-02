@@ -27,24 +27,129 @@
       ],
       "teachers": [
         {
-          "name": "Arjun Rao",
-          "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&h=400&auto=format&fit=crop",
-          "bio": "Professional guitarist and instructor focused on acoustic and electric styles, from fundamentals to performance.",
-          "experience": "10+ years",
+          "name": "Neill Braganza",
+          "title": "Music Educator | Performer | Composer",
+          "image": "/instructors/neill.png",
+          "bio": "Performer, composer, and educator known for structured teaching and strong fundamentals.",
+          "experience": "15+ years",
+          "teaches": [
+            "Keyboard",
+            "Guitar",
+            "Vocals"
+          ],
+          "teachingSince": "2013",
+          "schoolExperience": "Neev Academy (2018-2023)",
+          "certifications": "LCM Certified (Grade 7 - Vocals, Guitar, Piano)",
+          "quote": "Perform, don't fear.",
+          "highlight": "Known for structured teaching & strong fundamentals",
           "achievements": [
-            "Trinity Rock & Pop — Grade 8",
-            "Session guitarist for regional tours and studio work"
-          ]
+            "Founder: Neill Braganza Live (8-member band)",
+            "Performs at corporate and private events",
+            "Worked in Kannada film industry"
+          ],
+          "knowMore": {
+            "about": "Started music at 13 and now brings 15+ years of performance and teaching experience with a focus on LCM exam preparation.",
+            "qualifications": [
+              "Degree in Music - London College of Music (2009-2011)",
+              "Vocals, Classical Guitar, Piano - Grade 7",
+              "Music Theory - Grade 5",
+              "BBA - IBMR Hubli"
+            ],
+            "teachingExperience": [
+              "Teaching professionally since 2013",
+              "Neev Academy, Bellandur (2018-2023)",
+              "Currently at Johnson's Academy (since June 2025)"
+            ],
+            "performanceAndWork": [
+              "Founder: Neill Braganza Live (8-member band)",
+              "Performs at corporate and private events",
+              "Worked in Kannada film industry"
+            ],
+            "notableWork": [
+              "Edagaiye Apaghatakka Karana (2025) - \"OK BRO\"",
+              "Rock version of Saahore Baahubali (on request by S. S. Rajamouli)",
+              "Composer for Love Forever"
+            ],
+            "otherHighlights": [
+              "YouTube channel (2K+ subscribers)",
+              "Runs a fitness and wellness page"
+            ],
+            "personal": [
+              "Research-driven, highly organized, and passionate about teaching",
+              "Interests: Football, MMA, Cooking"
+            ]
+          }
         },
         {
-          "name": "Rohan Desai",
-          "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&h=400&auto=format&fit=crop",
-          "bio": "Electric guitar and band coaching—rock, blues, and performance skills for ensemble settings.",
-          "experience": "8+ years",
+          "name": "Mr. Yogan Sunam",
+          "title": "Music Educator | Performer | Composer",
+          "image": "/instructors/yogan.png",
+          "imageFit": "contain",
+          "bio": "Guitar educator with nearly 20 years of performance experience, focused on technique, musicality, and confident stage presence.",
+          "experience": "20 years",
+          "teaches": [
+            "Guitar"
+          ],
+          "teachingSince": "2009",
+          "quote": "Nothing is necessary than the unnecessary.",
+          "highlight": "Performer and composer who blends strong fundamentals with practical live experience",
           "achievements": [
-            "Former touring guitarist with indie acts",
-            "Band workshop facilitator for teens and adults"
-          ]
+            "Music Degree - Rock School of London",
+            "Guitar Grade 6 (completed in 2010)",
+            "Released 8 original compositions with his band"
+          ],
+          "knowMore": {
+            "about": "Started music at 14 and brings close to 20 years of live performance experience.",
+            "qualifications": [
+              "Music Degree - Rock School of London",
+              "Guitar - Grade 6 (Completed in 2010)",
+              "BA (Honours), DGC Darjeeling"
+            ],
+            "teachingExperience": [
+              "Tarang Dance & Music, Kolkata (2009-2013)",
+              "Taaqad Academy (2021-2022)",
+              "Hum & Strum (2023-2024)",
+              "Joined Johnson's Academy on 10 August 2025"
+            ],
+            "performanceAndWork": [
+              "Member of the 4-piece band The Nameless (est. 2017), based in Darjeeling",
+              "Roles: Vocalist, Guitarist, and Band Manager",
+              "Winners of 5 music competition awards in Darjeeling"
+            ],
+            "notableWork": [
+              "Youngster (Darjeeling film) - Music composition and background score",
+              "Taxi Driver (Darjeeling film) - Music contribution"
+            ]
+          }
+        },
+        {
+          "name": "Mr. Benjamin Rai",
+          "title": "Music Educator | Guitarist | Keyboard Instructor",
+          "image": "/instructors/benjamin.png",
+          "imageFit": "contain",
+          "bio": "Guitar educator teaching from beginner to advanced levels with a strong focus on technique and fundamentals.",
+          "experience": "Since 2018",
+          "teaches": [
+            "Guitar"
+          ],
+          "quote": "Nothing is necessary than the unnecessary.",
+          "highlight": "Structured, concept-first approach with personalized lesson plans",
+          "achievements": [
+            "Guitar - Grade 8 (Rock & Pop), Trinity College London",
+            "Musicianship Specialization, Berklee Online",
+            "Prepares students for graded guitar examinations"
+          ],
+          "knowMore": {
+            "about": "Mr. Benjamin Rai has been teaching across music academies since 2018 and guides students from beginner to advanced levels.",
+            "teachingExperience": [
+              "Concept-oriented and structured guitar instruction",
+              "Personalized lesson plans for individual learning styles",
+              "Builds confidence and consistency through guided practice"
+            ],
+            "otherHighlights": [
+              "Courses taken by Mr. Benjamin Rai at Johnson's Academy: Guitar"
+            ]
+          }
         }
       ]
     },
@@ -75,14 +180,41 @@
       ],
       "teachers": [
         {
-          "name": "Karthik R",
-          "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&h=400&auto=format&fit=crop",
-          "bio": "Drummer and rhythm coach with experience across rock, fusion, and contemporary styles.",
-          "experience": "12+ years",
+          "name": "Mr. Yogan Sunam",
+          "title": "Music Educator | Performer | Composer",
+          "image": "/instructors/yogan.png",
+          "imageFit": "contain",
+          "bio": "Drum and rhythm instructor with deep live-stage experience, helping students build timing, groove, and performance confidence.",
+          "experience": "20 years",
+          "teaches": [
+            "Drums"
+          ],
+          "teachingSince": "2009",
+          "quote": "Nothing is necessary than the unnecessary.",
+          "highlight": "Known for practical rhythm training shaped by extensive performance work",
           "achievements": [
-            "Performed with multiple Bangalore live bands",
-            "Workshop facilitator for youth percussion programs"
-          ]
+            "Nearly 20 years of performance experience",
+            "Contributed to 8 original compositions with The Nameless",
+            "Winner of 5 music competition awards in Darjeeling"
+          ],
+          "knowMore": {
+            "about": "Started playing music at 14 and has performed extensively across stage platforms for nearly two decades.",
+            "teachingExperience": [
+              "Tarang Dance & Music, Kolkata (2009-2013)",
+              "Taaqad Academy (2021-2022)",
+              "Hum & Strum (2023-2024)",
+              "Joined Johnson's Academy on 10 August 2025"
+            ],
+            "performanceAndWork": [
+              "Member of The Nameless (est. 2017), a 4-member Darjeeling band",
+              "Band roles: Vocalist, Guitarist, and Band Manager",
+              "Live performer across competitions and stage events"
+            ],
+            "notableWork": [
+              "Youngster (Darjeeling film) - Music composition and background score",
+              "Taxi Driver (Darjeeling film) - Music contribution"
+            ]
+          }
         }
       ]
     },
@@ -113,14 +245,40 @@
       ],
       "teachers": [
         {
-          "name": "Mira Joseph",
-          "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&h=400&auto=format&fit=crop",
-          "bio": "Pianist and educator blending classical training with popular repertoire for students of every age.",
-          "experience": "9+ years",
+          "name": "Mr. Benjamin Rai",
+          "title": "Music Educator | Guitarist | Piano Instructor",
+          "image": "/instructors/benjamin.png",
+          "imageFit": "contain",
+          "bio": "Piano instructor focused on fundamentals, music theory, and technical clarity for long-term musical growth.",
+          "experience": "Since 2018",
+          "teaches": [
+            "Piano"
+          ],
+          "quote": "Nothing is necessary than the unnecessary.",
+          "highlight": "Focuses on scales, chords, keys, and rhythm with clear conceptual learning",
           "achievements": [
-            "ABRSM advanced certifications",
-            "Accompanist for choirs and student recitals"
-          ]
+            "Piano - ATCL Diploma (Pursuing), Trinity College London",
+            "Music Theory - Grade 5, ABRSM",
+            "Teaches piano with strong foundation-first methodology"
+          ],
+          "knowMore": {
+            "about": "Piano mentor at Johnson's Academy helping students develop both technical skill and musical understanding.",
+            "qualifications": [
+              "Music Degree - Rock School of London",
+              "Piano - ATCL Diploma (Pursuing), Trinity College London",
+              "Music Theory - Grade 5, ABRSM",
+              "BA (Honours), DGC Darjeeling"
+            ],
+            "teachingExperience": [
+              "Teaching in various music academies since 2018",
+              "Experience with beginner to advanced-level learners",
+              "Prepares students for graded music examinations"
+            ],
+            "otherHighlights": [
+              "Covers essential theory: scales, chords, keys, and rhythm",
+              "Courses taken by Mr. Benjamin Rai at Johnson's Academy: Piano"
+            ]
+          }
         }
       ]
     },
@@ -151,14 +309,34 @@
       ],
       "teachers": [
         {
-          "name": "Sanjay Kumar",
-          "image": "https://images.unsplash.com/photo-1519085360753-af011a3a6e1a?q=80&w=400&h=400&auto=format&fit=crop",
-          "bio": "Keyboard specialist in Western and Indo-Western styles, arranging and teaching contemporary songs.",
-          "experience": "11+ years",
+          "name": "Keshava Murthy B.N.",
+          "title": "Senior Music Educator | Indo-Western Keyboard Specialist | Performer",
+          "image": "/instructors/keshava.png",
+          "imageFit": "contain",
+          "bio": "Seasoned music educator focused on Indo-Western keyboard instruction, balancing technical excellence with musical expression.",
+          "experience": "25+ years",
+          "teaches": [
+            "Indo-Western Keyboard"
+          ],
+          "teachingSince": "2001",
+          "highlight": "Shikshak Ratna awardee with deep industry experience",
           "achievements": [
-            "Bollywood and fusion session work",
-            "Curriculum designer for graded keyboard programs"
-          ]
+            "Assistant Music Director",
+            "Contributed to 1,500+ stage shows and recording projects",
+            "Worked across Kannada film and devotional music industry"
+          ],
+          "knowMore": {
+            "about": "A 25+ year educator and performer specializing in Indo-Western keyboard, teaching since 2001 with equal focus on technique and expression.",
+            "performanceAndWork": [
+              "Versatile performer and Assistant Music Director",
+              "Contributed to over 1,500 stage shows and recording projects",
+              "Worked across Kannada film and devotional music industry"
+            ],
+            "otherHighlights": [
+              "Honored with the Shikshak Ratna award",
+              "Brings deep industry insight and a passion for nurturing musical talent"
+            ]
+          }
         }
       ]
     },
@@ -189,14 +367,43 @@
       ],
       "teachers": [
         {
-          "name": "Ananya Sharma",
-          "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&h=400&auto=format&fit=crop",
-          "bio": "Hindustani vocalist trained in traditional gharana styles with a focus on voice culture and ragas.",
-          "experience": "14+ years",
+          "name": "Miss Archana Suresh Anegirikar",
+          "title": "Hindustani Vocal Instructor",
+          "image": "/instructors/archana.png",
+          "imageFit": "contain",
+          "bio": "Distinguished Hindustani classical vocal instructor with 15+ years of teaching experience and a strong examination-focused track record.",
+          "experience": "15+ years",
+          "teaches": [
+            "Hindustani Vocals"
+          ],
+          "teachingSince": "2011",
+          "quote": "Nothing is necessary than the unnecessary.",
+          "highlight": "ABGMM Visharad (First Class) educator who has mentored 100+ students with distinction-level results",
           "achievements": [
-            "Concert performances across Karnataka",
-            "Mentor for youth classical music competitions"
-          ]
+            "Visharad - First Class, Akhil Bharatiya Gandharva Mahavidyalaya Mandal (ABGMM)",
+            "Authorized ABGMM signatory for national music examinations",
+            "Guided 100+ students through formal qualification levels"
+          ],
+          "knowMore": {
+            "about": "Senior Hindustani vocal trainer known for disciplined, concept-driven teaching and consistent exam outcomes.",
+            "qualifications": [
+              "Visharad Examination - First Class (ABGMM, 2011)",
+              "Advanced structured music education up to Grade 7 level"
+            ],
+            "teachingExperience": [
+              "Teaching journey began in 2011",
+              "7+ years contributing to student growth at Johnson's Academy",
+              "Proficient in both online and offline instruction"
+            ],
+            "performanceAndWork": [
+              "Integrates practical vocal skill and stage performance into regular training",
+              "Specialized in ABGMM exam preparation and national exam guidance"
+            ],
+            "otherHighlights": [
+              "Email: anigirikaraa@gmail.com",
+              "YouTube: https://youtu.be/jDsOTR_wB8k?si=Qvb0uH54eou4YSh_"
+            ]
+          }
         }
       ]
     },
@@ -225,18 +432,7 @@
         "Beginners",
         "Intermediate learners"
       ],
-      "teachers": [
-        {
-          "name": "Megha Nair",
-          "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&h=400&auto=format&fit=crop",
-          "bio": "Indian vocal coach covering classical, devotional, and film repertoire with emphasis on expression.",
-          "experience": "10+ years",
-          "achievements": [
-            "All-India Radio featured artist",
-            "Choir director for cultural festivals"
-          ]
-        }
-      ]
+      "teachers": []
     },
     {
       "id": "western-vocal-classes-bangalore",
@@ -265,14 +461,46 @@
       ],
       "teachers": [
         {
-          "name": "Diya Thomas",
-          "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&h=400&auto=format&fit=crop",
-          "bio": "Contemporary vocal coach specializing in pop, rock, and jazz with a focus on healthy technique.",
-          "experience": "8+ years",
+          "name": "Mr. Yogan Sunam",
+          "title": "Music Educator | Performer | Composer",
+          "image": "/instructors/yogan.png",
+          "imageFit": "contain",
+          "bio": "Western vocal trainer and live performer focused on expression, stage readiness, and disciplined vocal practice.",
+          "experience": "20 years",
+          "teaches": [
+            "Western Vocals"
+          ],
+          "teachingSince": "2009",
+          "quote": "Nothing is necessary than the unnecessary.",
+          "highlight": "Blends live band experience with student-friendly vocal coaching",
           "achievements": [
-            "Studio session vocalist",
-            "Vocal director for college music productions"
-          ]
+            "Vocalist and band manager for The Nameless",
+            "Nearly 20 years of performance experience",
+            "Music educator across multiple academies before Johnson's Academy"
+          ],
+          "knowMore": {
+            "about": "Experienced performer and composer helping western vocal students develop confidence, control, and stage expression.",
+            "qualifications": [
+              "Music Degree - Rock School of London",
+              "BA (Honours), DGC Darjeeling"
+            ],
+            "teachingExperience": [
+              "Tarang Dance & Music, Kolkata (2009-2013)",
+              "Taaqad Academy (2021-2022)",
+              "Hum & Strum (2023-2024)",
+              "Joined Johnson's Academy on 10 August 2025"
+            ],
+            "performanceAndWork": [
+              "Member of The Nameless (est. 2017), based in Darjeeling",
+              "Roles: Vocalist, Guitarist, and Band Manager",
+              "Band winners of 5 music competition awards in Darjeeling"
+            ],
+            "notableWork": [
+              "Released 8 original compositions",
+              "Youngster (Darjeeling film) - Music composition and background score",
+              "Taxi Driver (Darjeeling film) - Music contribution"
+            ]
+          }
         }
       ]
     },
@@ -301,18 +529,7 @@
         "Beginners",
         "Intermediate learners"
       ],
-      "teachers": [
-        {
-          "name": "Sneha Iyer",
-          "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&h=400&auto=format&fit=crop",
-          "bio": "Violinist and strings educator with a classical foundation and ensemble experience.",
-          "experience": "11+ years",
-          "achievements": [
-            "Orchestra section leader",
-            "Trinity strings syllabus mentor"
-          ]
-        }
-      ]
+      "teachers": []
     },
     {
       "id": "dance-classes-bangalore",
@@ -341,14 +558,38 @@
       ],
       "teachers": [
         {
-          "name": "Priya Menon",
-          "image": "https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=400&h=400&auto=format&fit=crop",
-          "bio": "Choreographer and dance instructor in Western and contemporary styles for youth and adults.",
-          "experience": "9+ years",
+          "name": "Vivek Singh Kumar",
+          "title": "Dance Educator | Contemporary & Bollywood Instructor | Choreographer",
+          "image": "/instructors/vivek.png",
+          "bio": "Dynamic dance educator and choreographer specializing in contemporary, Bollywood, and dance fitness with an engaging, disciplined teaching approach.",
+          "experience": "20+ years",
+          "teaches": [
+            "Contemporary",
+            "Bollywood",
+            "Dance Fitness"
+          ],
+          "highlight": "Known for discipline, performance quality, and holistic fitness training",
           "achievements": [
-            "Showcase choreographer for city-wide events",
-            "Certified in contemporary dance pedagogy"
-          ]
+            "Former faculty at Shiamak Davar Institute",
+            "Led studio, corporate, and stage-based dance programs",
+            "Conducted workshops, seminars, and large-scale Zumba sessions"
+          ],
+          "knowMore": {
+            "about": "A dance educator and choreographer with 20+ years of experience in contemporary, Bollywood, and dance fitness.",
+            "teachingExperience": [
+              "Experienced instructor across multiple dance platforms",
+              "Former faculty at the Shiamak Davar Institute"
+            ],
+            "performanceAndWork": [
+              "Led studio, corporate, and stage-based programs",
+              "Conducted workshops and seminars",
+              "Conducted large-scale Zumba sessions"
+            ],
+            "otherHighlights": [
+              "Engaging teaching style that builds confident performers",
+              "Focus on discipline, performance quality, and holistic fitness"
+            ]
+          }
         }
       ]
     },
@@ -379,52 +620,50 @@
       ],
       "teachers": [
         {
-          "name": "Rahul Verma",
-          "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&h=400&auto=format&fit=crop",
-          "bio": "Visual artist and educator teaching drawing, painting, and mixed media in a studio setting.",
-          "experience": "7+ years",
+          "name": "Miss R. Yashasvini",
+          "title": "Creative Arts Instructor | Art's & Craft Instructor",
+          "image": "/instructors/yashasvini.png",
+          "imageFit": "contain",
+          "bio": "Creative arts instructor focused on imagination, confidence, and strong visual art basics.",
+          "experience": "4+ years",
+          "teaches": [
+            "Drawing & Sketching",
+            "Watercolor & Acrylic Painting",
+            "Craft & Creative Projects"
+          ],
+          "quote": "Nothing is necessary than the unnecessary.",
+          "highlight": "Patient and supportive mentor passionate about child-centered creative growth",
           "achievements": [
-            "Group exhibitions in Bangalore",
-            "Art foundation program lead instructor"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "karate-classes-bangalore",
-      "title": "Karate Classes in Bangalore",
-      "description": "Build strength, discipline, and confidence with our karate classes in Bangalore. Our certified instructors teach traditional martial arts in a safe, structured environment.",
-      "image": "https://images.unsplash.com/photo-1515025617920-e1e674b5033c?q=80&w=2144&auto=format&fit=crop",
-      "metaDescription": "Join the best karate classes in Bangalore at Johnson's Academy. Martial arts for discipline and fitness. Learn from expert trainers. Book a free demo today.",
-      "about": [
-        "Our karate classes in Bangalore focus on discipline, respect, and physical fitness. Students learn basic stances, strikes, blocks, and katas in a progressive, age-appropriate curriculum.",
-        "Karate improves focus, coordination, and self-confidence. We welcome both kids and adults, from complete beginners to those advancing through belt levels.",
-        "Join Johnson's Academy for a balanced approach to martial arts training. Book a free demo to experience our dojo."
-      ],
-      "learningPoints": [
-        "Basic stances, blocks, and strikes",
-        "Kata (forms) and sequences",
-        "Self-defense fundamentals",
-        "Discipline and focus building",
-        "Physical fitness and conditioning",
-        "Belt progression and grading"
-      ],
-      "whoCanJoin": [
-        "Kids (5+ years)",
-        "Adults",
-        "Beginners",
-        "Intermediate learners"
-      ],
-      "teachers": [
-        {
-          "name": "Vikram Singh",
-          "image": "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?q=80&w=400&h=400&auto=format&fit=crop",
-          "bio": "Karate black belt instructor emphasizing discipline, fitness, and safe progression through belt levels.",
-          "experience": "15+ years",
-          "achievements": [
-            "State-level kata medalist",
-            "Certified youth martial arts coach"
-          ]
+            "Participation in art exhibitions and college showcases",
+            "Involvement in creative projects and themed art displays",
+            "Experience handling live art demonstrations and workshops"
+          ],
+          "knowMore": {
+            "about": "Creative Arts and Art & Craft instructor helping students express themselves through structured, imaginative learning.",
+            "qualifications": [
+              "The Oxford English School (2009-2019)",
+              "Holy Spirit PU College (2019-2021)",
+              "Bachelor of Fine Arts (BFA), College of Fine Arts, Chitrakala Parishath (2022-2026)"
+            ],
+            "teachingExperience": [
+              "Trains children in drawing and creative art with a focus on skills, imagination, and confidence."
+            ],
+            "performanceAndWork": [
+              "Participated in art exhibitions, college showcases, and institutional events.",
+              "Contributed to themed art displays and student artwork collections.",
+              "Conducted live art demonstrations and workshops."
+            ],
+            "otherHighlights": [
+              "Covers: Drawing, shading, watercolor, acrylic, oil pastels, craft, poster making, and basic design",
+              "Email: yashasvini.ramesh14@gmail.com"
+            ],
+            "personal": [
+              "Patient and supportive mentor",
+              "Creative and imaginative thinker",
+              "Passionate about colors, design, and child development",
+              "Interested in modern and traditional art forms"
+            ]
+          }
         }
       ]
     }

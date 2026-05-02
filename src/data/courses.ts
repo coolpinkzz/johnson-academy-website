@@ -3,9 +3,26 @@ import coursesData from "./courses.json";
 export type Teacher = {
   name: string;
   image: string;
+  imageFit?: "cover" | "contain";
   bio: string;
   experience: string;
+  title?: string;
+  teaches?: string[];
+  teachingSince?: string;
+  quote?: string;
+  highlight?: string;
+  schoolExperience?: string;
+  certifications?: string;
   achievements: string[];
+  knowMore?: {
+    about?: string;
+    qualifications?: string[];
+    teachingExperience?: string[];
+    performanceAndWork?: string[];
+    notableWork?: string[];
+    otherHighlights?: string[];
+    personal?: string[];
+  };
 };
 
 export type Course = {

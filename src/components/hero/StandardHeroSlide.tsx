@@ -1,7 +1,7 @@
 import type { HeroImageSlide } from "@/data/hero-slides";
 
 export const heroSlideTitleClassName =
-  "text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl";
+  "max-w-[18ch] text-[clamp(2rem,4.6vw,4.75rem)] font-bold leading-[1.08] tracking-tight text-white";
 
 type StandardHeroSlideProps = {
   slide: HeroImageSlide;
@@ -29,7 +29,7 @@ export default function StandardHeroSlide({
         </span>
         {slide.lineAfter}
       </TitleTag>
-      <p className="mt-4 max-w-xl text-base text-white/80 sm:mt-6 sm:text-lg lg:text-xl">
+      <p className="mt-4 mb-8 max-w-[62ch] text-[clamp(1rem,1.5vw,1.25rem)] leading-relaxed text-white/80 sm:mt-6 sm:mb-10">
         {slide.description}
       </p>
     </>

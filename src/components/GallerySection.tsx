@@ -2,28 +2,36 @@ import Image from "next/image";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&q=80",
-    alt: "Music performance at Johnson's Academy",
+    src: "https://www.johnsonsacademy.in/wp-content/uploads/2025/03/pcb2007436T01.jpg",
+    alt: "Johnson's Academy gallery performance image 0",
   },
   {
-    src: "https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=400&q=80",
-    alt: "Dance class at Johnson's Academy",
+    src: "https://www.johnsonsacademy.in/wp-content/uploads/2025/03/pcb2007428T01.jpg",
+    alt: "Johnson's Academy gallery performance image 1",
   },
   {
-    src: "https://images.unsplash.com/photo-1545128485-c400e7702796?w=400&q=80",
-    alt: "Drum lessons at Johnson's Academy",
+    src: "https://www.johnsonsacademy.in/wp-content/uploads/2025/03/pcb2007300T01.jpg",
+    alt: "Johnson's Academy gallery performance image 2",
   },
   {
-    src: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=400&q=80",
-    alt: "Guitar instruction at Johnson's Academy",
+    src: "https://www.johnsonsacademy.in/wp-content/uploads/2025/03/pcb2007212T01-1.jpg",
+    alt: "Johnson's Academy gallery performance image 3",
   },
   {
-    src: "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=400&q=80",
-    alt: "Martial arts training at Johnson's Academy",
+    src: "https://www.johnsonsacademy.in/wp-content/uploads/2025/03/DSC04505-scaled.jpg",
+    alt: "Johnson's Academy gallery performance image 4",
   },
   {
-    src: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&q=80",
-    alt: "Art class at Johnson's Academy",
+    src: "https://www.johnsonsacademy.in/wp-content/uploads/2025/03/DSC04319-scaled.jpg",
+    alt: "Johnson's Academy gallery performance image 5",
+  },
+  {
+    src: "https://www.johnsonsacademy.in/wp-content/uploads/2025/03/DSC04056-scaled.jpg",
+    alt: "Johnson's Academy gallery performance image 6",
+  },
+  {
+    src: "https://www.johnsonsacademy.in/wp-content/uploads/2025/03/DSC03984-scaled.jpg",
+    alt: "Johnson's Academy gallery performance image 7",
   },
 ];
 
@@ -39,7 +47,7 @@ export default function GallerySection() {
             Glimpses of life at Johnson&apos;s Academy—performances, classes, and our vibrant community.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:gap-6">
+        <div className="mt-16 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
           {galleryImages.map((img, i) => (
             <div
               key={i}

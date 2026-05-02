@@ -38,7 +38,26 @@ export type HeroAppPromoSlide = {
   mockups: HeroAppMockup[];
 };
 
-export type HeroSlide = HeroImageSlide | HeroAppPromoSlide;
+export type HeroAffiliationSlide = {
+  kind: "affiliation-promo";
+  key: string;
+  heading: string;
+  intro: string;
+  details: string;
+  highlights: string[];
+  ctaLabel: string;
+  ctaHref: string;
+  institutions: {
+    name: string;
+    logoSrc: string;
+    logoAlt: string;
+  }[];
+};
+
+export type HeroSlide =
+  | HeroImageSlide
+  | HeroAppPromoSlide
+  | HeroAffiliationSlide;
 
 export const heroSlides: HeroSlide[] = [
   {
@@ -48,37 +67,11 @@ export const heroSlides: HeroSlide[] = [
       "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1920&q=85",
     imageAlt:
       "Students learning music and dance at Johnson Academy in Bangalore — guitar, keyboard, and drums training",
-    lineBefore: "Best Music & Dance Academy in ",
+    lineBefore: "Top Music & Dance Academy in ",
     highlight: "Bangalore",
     lineAfter: "",
     description:
-      "Master Guitar, Keyboard, Drums, Violin, Dance & Art with certified trainers. Flexible timings for all age groups. Start your musical journey today.",
-  },
-  {
-    kind: "image",
-    key: "trainers",
-    image:
-      "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=1920&q=85",
-    imageAlt:
-      "Musicians and instruments at a music school representing structured lessons at Johnson Academy",
-    lineBefore: "Learn with ",
-    highlight: "Certified Trainers",
-    lineAfter: "",
-    description:
-      "Structured paths from beginner to advanced, performance opportunities, and personal attention in every class—so you improve with confidence.",
-  },
-  {
-    kind: "image",
-    key: "every-age",
-    image:
-      "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=1920&q=85",
-    imageAlt:
-      "Dance and movement class environment reflecting Johnson Academy dance programs in Bangalore",
-    lineBefore: "Flexible Programs for ",
-    highlight: "Every Age",
-    lineAfter: "",
-    description:
-      "Weekday and weekend batches, multiple branches across Bangalore, and courses designed for kids, teens, and adults.",
+      "Learn Guitar, Keyboard, Drums, Violin, Dance, and Art with expert trainers. Flexible batches for kids and adults.",
   },
   {
     kind: "app-promo",
@@ -112,6 +105,36 @@ export const heroSlides: HeroSlide[] = [
         width: 640,
         height: 960,
         rotate: "10deg",
+      },
+    ],
+  },
+  {
+    kind: "affiliation-promo",
+    key: "international-affiliation",
+    heading: "Globally Recognized Music Certifications",
+    intro:
+      "We are affiliated with RSL Awards (UK) and Trinity College London, offering internationally recognized music certifications that enhance your learning journey.",
+    details: "",
+    highlights: [
+      "Internationally accepted qualifications",
+      "Performance-based assessment",
+      "Suitable for all age groups",
+      "Flexible learning approach",
+    ],
+    ctaLabel: "Book Free Demo \u2192",
+    ctaHref: "tel:+917798347976",
+    institutions: [
+      {
+        name: "RSL Awards (UK)",
+        logoSrc:
+          "https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Rockschool_Logo.svg/640px-Rockschool_Logo.svg.png",
+        logoAlt: "RSL Awards United Kingdom logo",
+      },
+      {
+        name: "Trinity College London",
+        logoSrc:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Trinity_College_London_logo.svg/640px-Trinity_College_London_logo.svg.png",
+        logoAlt: "Trinity College London logo",
       },
     ],
   },

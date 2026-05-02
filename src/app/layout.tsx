@@ -13,8 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Johnson Academy | Best Music & Dance Academy in Bangalore",
+  metadataBase: new URL("https://johnsonsacademy.com"),
+  title: {
+    default: "Johnson's Academy | Music, Dance, Art & Karate Classes in Bangalore",
+    template: "%s | Johnson's Academy",
+  },
   description: "Learn Guitar, Keyboard, Drums, Violin, Dance & Art at Johnson Academy. Book your free demo class today.",
+  icons: {
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
+  },
 };
 
 export default function RootLayout({

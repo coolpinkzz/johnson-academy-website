@@ -7,14 +7,15 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { HeroSlide } from "@/data/hero-slides";
 import { useAnimatedCounter } from "@/hooks/useAnimatedCounter";
 import AppPromoSlide from "./AppPromoSlide";
+import AffiliationSlide from "./AffiliationSlide";
 import SlideItem from "./SlideItem";
 import StandardHeroSlide from "./StandardHeroSlide";
 
-const AUTOPLAY_MS = 6500;
+const AUTOPLAY_MS = 8000;
 
 const stats = [
   {
-    value: 500,
+    value: 700,
     suffix: "+",
     label: "Students Trained",
     icon: (
@@ -56,7 +57,7 @@ const stats = [
     ),
   },
   {
-    value: 4.8,
+    value: 4.9,
     suffix: "",
     label: "Google Rating",
     icon: (
@@ -143,7 +144,10 @@ function slideAnnouncement(slide: HeroSlide): string {
   if (slide.kind === "image") {
     return `${slide.lineBefore}${slide.highlight}${slide.lineAfter}. ${slide.description}`;
   }
-  return `${slide.headingLine1} ${slide.headingLine2Before}${slide.headingAccent}${slide.headingLine2After}. ${slide.supportingText}`;
+  if (slide.kind === "app-promo") {
+    return `${slide.headingLine1} ${slide.headingLine2Before}${slide.headingAccent}${slide.headingLine2After}. ${slide.supportingText}`;
+  }
+  return `${slide.heading}. ${slide.intro} ${slide.details}`;
 }
 
 type HeroSliderProps = {
@@ -158,6 +162,8 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
   const count = slides.length;
   const activeSlide = slides[active];
   const isImageSlide = activeSlide.kind === "image";
+  const isAppPromoSlide = activeSlide.kind === "app-promo";
+  const isAffiliationSlide = activeSlide.kind === "affiliation-promo";
 
   const imageSlides = useMemo(
     () => slides.filter((s): s is Extract<HeroSlide, { kind: "image" }> => s.kind === "image"),
@@ -166,6 +172,14 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
 
   const appSlide = useMemo(
     () => slides.find((s): s is Extract<HeroSlide, { kind: "app-promo" }> => s.kind === "app-promo"),
+    [slides]
+  );
+  const affiliationSlide = useMemo(
+    () =>
+      slides.find(
+        (s): s is Extract<HeroSlide, { kind: "affiliation-promo" }> =>
+          s.kind === "affiliation-promo"
+      ),
     [slides]
   );
 
@@ -190,11 +204,11 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
 
   useEffect(() => {
     if (reducedMotion || count <= 1) return;
-    const t = window.setInterval(() => {
+    const t = window.setTimeout(() => {
       setActive((i) => (i + 1) % count);
     }, AUTOPLAY_MS);
-    return () => window.clearInterval(t);
-  }, [reducedMotion, count]);
+    return () => window.clearTimeout(t);
+  }, [active, reducedMotion, count]);
 
   useEffect(() => {
     const el = sectionRef.current;
@@ -227,11 +241,11 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
     <section
       ref={sectionRef}
       tabIndex={0}
-      className="relative h-dvh max-h-dvh min-h-0 overflow-hidden outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4 focus-visible:ring-offset-black"
+      className="relative h-dvh max-h-dvh min-h-0 w-full overflow-hidden outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4 focus-visible:ring-offset-black"
       aria-labelledby="hero-heading"
       aria-roledescription="carousel"
     >
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-0">
         {slides.map((slide, i) => (
           <div
             key={slide.key}
@@ -271,7 +285,7 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
       </div>
 
       <div
-        className={`absolute inset-0 z-[2] transition-opacity ${transitionClass} ${
+        className={`absolute inset-0 z-10 transition-opacity ${transitionClass} ${
           isImageSlide ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
         style={{
@@ -282,20 +296,20 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
       />
 
       <div
-        className={`absolute inset-0 z-[2] transition-opacity ${transitionClass} ${
+        className={`absolute inset-0 z-10 transition-opacity ${transitionClass} ${
           isImageSlide ? "pointer-events-none opacity-0" : "opacity-100"
         } bg-[radial-gradient(ellipse_70%_55%_at_0%_0%,rgba(255,106,26,0.14)_0%,transparent_50%),linear-gradient(145deg,rgba(255,106,26,0.12)_0%,rgba(0,0,0,0.35)_42%,rgba(0,0,0,0.5)_100%)] max-sm:bg-[radial-gradient(ellipse_75%_60%_at_0%_0%,rgba(255,106,26,0.22)_0%,transparent_52%),linear-gradient(160deg,rgba(255,106,26,0.15)_0%,rgba(0,0,0,0.28)_40%,rgba(0,0,0,0.45)_100%)]`}
         aria-hidden={isImageSlide}
       />
 
-      <div className="relative z-10 flex h-full min-h-0 flex-col pt-[4.5rem] sm:pt-24">
-        <div className="mx-auto flex min-h-0 w-full max-w-7xl flex-1 flex-col justify-center px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+      <div className="relative z-20 flex h-full min-h-0 flex-col pt-[4.5rem] sm:pt-24">
+        <div className="mx-auto flex min-h-0 w-full max-w-[1200px] flex-1 flex-col justify-center px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
           <div className="relative w-full min-h-0">
             <div
               className={`transition-opacity ${transitionClass} ${
                 isImageSlide
-                  ? "relative z-10 w-full max-w-2xl opacity-100"
-                  : "pointer-events-none absolute inset-x-0 top-0 z-0 max-w-2xl opacity-0"
+                  ? "relative z-10 w-full max-w-3xl pb-4 opacity-100 sm:pb-6"
+                  : "pointer-events-none absolute inset-x-0 top-0 z-0 max-w-3xl opacity-0"
               }`}
               aria-hidden={!isImageSlide}
             >
@@ -322,11 +336,11 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
             {appSlide && (
               <div
                 className={`transition-opacity ${transitionClass} ${
-                  isImageSlide
-                    ? "pointer-events-none absolute inset-x-0 top-0 z-0 w-full opacity-0"
-                    : "relative z-10 w-full opacity-100"
+                  isAppPromoSlide
+                    ? "relative z-10 w-full opacity-100"
+                    : "pointer-events-none absolute inset-x-0 top-0 z-0 w-full opacity-0"
                 }`}
-                aria-hidden={isImageSlide}
+                aria-hidden={!isAppPromoSlide}
               >
                 <AppPromoSlide
                   content={appSlide}
@@ -335,11 +349,28 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
                 />
               </div>
             )}
+
+            {affiliationSlide && (
+              <div
+                className={`transition-opacity ${transitionClass} ${
+                  isAffiliationSlide
+                    ? "relative z-10 w-full opacity-100"
+                    : "pointer-events-none absolute inset-x-0 top-0 z-0 w-full opacity-0"
+                }`}
+                aria-hidden={!isAffiliationSlide}
+              >
+                <AffiliationSlide
+                  slide={affiliationSlide}
+                  headingId="hero-affiliation-heading"
+                  HeadingTag="h2"
+                />
+              </div>
+            )}
           </div>
 
           {isImageSlide && (
             <>
-              <div className="mt-8 flex max-w-2xl flex-col gap-4 sm:mt-10 sm:flex-row sm:gap-6">
+              <div className="mt-16 flex w-full max-w-3xl flex-col gap-4 sm:mt-20 sm:flex-row sm:gap-6 lg:mt-24">
                 <Link
                   href="tel:+917798347976"
                   className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition-all hover:bg-primary/90 hover:shadow-primary/40 hover:scale-[1.02] active:scale-[0.98]"
@@ -377,7 +408,7 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
                 </Link>
               </div>
 
-              <div className="mt-8 grid max-w-2xl grid-cols-3 gap-2 sm:mt-10 sm:gap-3 lg:gap-4">
+              <div className="mt-5 grid w-full max-w-3xl grid-cols-3 gap-2 sm:mt-9 sm:gap-3 lg:gap-4">
                 {stats.map((stat) => (
                   <AnimatedStatCard key={stat.label} stat={stat} />
                 ))}
@@ -386,7 +417,7 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
           )}
         </div>
 
-        <div className="relative z-20 flex shrink-0 items-center justify-center gap-4 px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-2">
+        <div className="relative z-30 mx-auto flex w-full max-w-[1200px] shrink-0 items-center justify-center gap-4 px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-2 sm:px-6 lg:px-8">
           <button
             type="button"
             onClick={() => go(-1)}
