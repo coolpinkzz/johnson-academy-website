@@ -6,10 +6,9 @@ import AboutStatsSection from "@/components/AboutStatsSection";
 const SITE_URL = "https://johnsonsacademy.com";
 
 export const metadata: Metadata = {
-  title:
-    "About Us | Johnson's Academy — Music, Dance & Arts Academy in Bangalore",
+  title: "About Johnson's Academy Bangalore",
   description:
-    "Founded in 2017, Johnson's Academy has trained 1000+ students in Bangalore. Learn about our history, facilities, expert faculty, and our role in Bengaluru's arts community.",
+    "Learn about Johnson's Academy in Bangalore - founded in 2017, 1000+ students trained, expert faculty, structured learning, and performance-focused arts education.",
   keywords: [
     "Johnson Academy Bangalore",
     "music academy Bangalore",
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
     "Ashish Johnson",
   ],
   openGraph: {
-    title: "About Us | Johnson's Academy — Music, Dance & Arts in Bangalore",
+    title: "About Johnson's Academy - Music, Dance & Arts in Bangalore",
     description:
       "Founded in 2017 in Bengaluru. 1000+ students trained. Expert faculty, premium facilities. Discover our story and commitment to the arts.",
     type: "website",

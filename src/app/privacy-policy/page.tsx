@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import CoursePageLayout from "@/components/CoursePageLayout";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Johnson's Academy",
+  title: "Privacy Policy - Johnson's Academy",
   description:
-    "Johnson's Academy Privacy Policy. Learn how we collect, use, and protect your personal information.",
+    "Read the Johnson's Academy privacy policy to understand how we collect, use, store, and protect your personal information.",
 };
 
 export default function PrivacyPolicyPage() {

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import CoursePageLayout from "@/components/CoursePageLayout";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | Johnson's Academy",
+  title: "Terms and Conditions - Johnson's Academy",
   description:
-    "Johnson's Academy Terms and Conditions. Read our policies on services, payments, demo classes, and more.",
+    "Review Johnson's Academy terms and conditions covering enrollment, fees, demo classes, student responsibilities, and service policies.",
 };
 
 export default function TermsAndConditionsPage() {

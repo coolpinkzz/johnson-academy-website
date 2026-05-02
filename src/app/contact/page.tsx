@@ -7,31 +7,17 @@ import {
   MessageCircle,
 } from "lucide-react";
 import { courses } from "@/data/courses";
+import { branches } from "@/data/branches";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Johnson's Academy — Book a Free Demo Class",
+  title: "Contact Johnson's Academy Bangalore",
   description:
-    "Get in touch with Johnson's Academy. Book your free demo class for music, dance, art, or karate. Visit our branches in Arekere, Hulimavu, and Vijaya Bank Layout, Bangalore.",
+    "Contact Johnson's Academy to book a free demo class for music, dance, art, or karate in Bangalore. Call, WhatsApp, or visit our branches.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
-
-const branches = [
-  {
-    name: "Arekere Branch",
-    address:
-      "Vysya Bank Colony, Shantiniketan Layout, Arekere, Bengaluru, Karnataka - 560076",
-  },
-  {
-    name: "Hulimavu Branch",
-    address:
-      "SS Arcade, DLF Main Rd, Hulimavu, Bengaluru, Karnataka - 560076",
-  },
-  {
-    name: "Vijaya Bank Layout Branch",
-    address:
-      "Sumukha Greenville, Johnson's Academy, Vijaya Bank Layout, Bengaluru, Karnataka - 560076",
-  },
-];
 
 const WHATSAPP_NUMBER = "917798347976";
 const PHONE_NUMBER = "+917798347976";
@@ -103,7 +89,7 @@ export default function ContactPage() {
                   </h3>
                   <ul className="space-y-4">
                     {branches.map((branch) => (
-                      <li key={branch.name}>
+                      <li key={branch.id}>
                         <p className="font-medium text-white text-sm">
                           {branch.name}
                         </p>
@@ -124,7 +110,10 @@ export default function ContactPage() {
                   </h3>
                   <ContactForm
                     courses={courses}
-                    branches={branches}
+                    branches={branches.map((branch) => ({
+                      name: branch.name,
+                      address: branch.address,
+                    }))}
                   />
                 </div>
               </div>
@@ -147,7 +136,7 @@ export default function ContactPage() {
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {branches.map((branch) => (
                 <a
-                  key={branch.name}
+                  key={branch.id}
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
                     `${branch.address}, Bengaluru`
                   )}`}

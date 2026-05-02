@@ -26,6 +26,11 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 @keyframes liquid-blob {
   0%,
   100% {
