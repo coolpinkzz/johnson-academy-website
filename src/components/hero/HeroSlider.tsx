@@ -390,22 +390,6 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
                     />
                   </svg>
                 </Link>
-                <Link
-                  href="#video"
-                  className="inline-flex items-center justify-center gap-2 rounded-2xl border-2 border-white/30 px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:border-primary hover:bg-white/10"
-                >
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20">
-                    <svg
-                      className="h-5 w-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </span>
-                  Watch Video
-                </Link>
               </div>
 
               <div className="mt-5 grid w-full max-w-3xl grid-cols-3 gap-2 sm:mt-9 sm:gap-3 lg:gap-4">
