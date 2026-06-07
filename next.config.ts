@@ -22,6 +22,12 @@ const nextConfig: NextConfig = {
         hostname: "www.johnsonsacademy.in",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "ik.imagekit.io",
+        pathname: "/**",
+      },
+
     ],
   },
 };
