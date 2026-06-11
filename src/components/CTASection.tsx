@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { branches } from "@/data/branches";
 
 const courses = [
   "Music",
@@ -13,7 +14,6 @@ const courses = [
   "Violin",
   "Vocals",
 ];
-const branches = ["Arekere", "Hulimavu"];
 
 export default function CTASection() {
   const [formData, setFormData] = useState({
@@ -171,9 +171,13 @@ export default function CTASection() {
               <option value="" className="bg-black text-white">
                 Select a branch
               </option>
-              {branches.map((b) => (
-                <option key={b} value={b} className="bg-black text-white">
-                  {b}
+              {branches.map((branch) => (
+                <option
+                  key={branch.id}
+                  value={branch.name}
+                  className="bg-black text-white"
+                >
+                  {branch.name}
                 </option>
               ))}
             </select>

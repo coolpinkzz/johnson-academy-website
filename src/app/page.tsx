@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import CoursesSection from "@/components/CoursesSection";
+import AffiliationsSection from "@/components/AffiliationsSection";
 import BranchesSection from "@/components/BranchesSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -19,7 +20,7 @@ import type { Metadata } from "next";
 
 const homeTitle = "Best Music and Dance Academy in Bangalore";
 const homeDescription =
-  "Join Johnson's Academy for expert-led music, dance, art, and karate classes in Bangalore. Flexible batches for kids and adults. Book a free demo class today.";
+  "Join Johnson's Academy for expert-led music, dance, and art classes in Bangalore. Flexible batches for kids and adults. Book a free demo class today.";
 
 export const metadata: Metadata = {
   title: homeTitle,
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Johnson's Academy Bangalore - Music, Dance, Art and Karate Classes",
+    title: "Johnson's Academy Bangalore - Music, Dance and Art Classes",
     description:
       "Expert-led classes with structured learning, stage performance exposure, and flexible batches in Bangalore.",
     url: "/",
@@ -55,12 +56,12 @@ export default function Home() {
         {
           question: "What courses are available at Johnson's Academy in Bangalore?",
           answer:
-            "We offer music (including guitar, keyboard, drums, and violin), dance, art, and karate programmes with structured learning paths for kids and adults.",
+            "We offer music (including guitar, keyboard, drums, and violin), dance, and art programmes with structured learning paths for kids and adults.",
         },
         {
           question: "Where are Johnson's Academy branches located in Bengaluru?",
           answer:
-            "We operate from multiple locations in Bengaluru, including Arekere and Hulimavu. Visit our branches page or contact us for directions and batch timings.",
+            "We operate from multiple locations in Bengaluru, including Arekere, Hulimavu, Vijaya Bank Layout, and Electronic City Phase 1. Visit our branches page or contact us for directions and batch timings.",
         },
       ],
     }),
@@ -75,6 +76,7 @@ export default function Home() {
       </div>
       <main className="flex flex-1 flex-col">
         <CoursesSection />
+        <AffiliationsSection />
         <WhyChooseUs />
         <BranchesSection />
         <TestimonialsSection />

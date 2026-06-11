@@ -7,22 +7,21 @@ import CoursesMarketplace from "@/components/courses/CoursesMarketplace";
 const SITE_URL = "https://johnsonsacademy.com";
 
 export const metadata: Metadata = {
-  title: "Music, Dance, Art and Karate Courses in Bangalore",
+  title: "Music, Dance and Art Courses in Bangalore",
   description:
-    "Explore guitar, keyboard, drums, violin, vocal, dance, art, and karate classes at Johnson's Academy Bangalore. Compare courses and book a free demo.",
+    "Explore guitar, keyboard, drums, violin, vocal, dance, and art classes at Johnson's Academy Bangalore. Compare courses and book a free demo.",
   keywords: [
     "music classes Bangalore",
     "dance classes Bangalore",
     "guitar classes Bangalore",
     "piano classes Bangalore",
     "art classes Bangalore",
-    "karate classes Bangalore",
     "Johnson Academy",
   ],
   openGraph: {
-    title: "Johnson's Academy Courses - Music, Dance, Art and Karate",
+    title: "Johnson's Academy Courses - Music, Dance and Art",
     description:
-      "Explore music, dance, art, and karate courses at Johnson's Academy. Expert trainers. Book a free demo.",
+      "Explore music, dance, and art courses at Johnson's Academy. Expert trainers. Book a free demo.",
     type: "website",
     url: `${SITE_URL}/courses`,
   },
@@ -37,7 +36,7 @@ function CoursesJsonLd() {
     "@type": "ItemList",
     name: "Courses at Johnson's Academy",
     description:
-      "Music, dance, art, and karate courses in Bangalore at Johnson's Academy",
+      "Music, dance, and art courses in Bangalore at Johnson's Academy",
     numberOfItems: courses.length,
     itemListElement: courses.map((course, index) => ({
       "@type": "ListItem",

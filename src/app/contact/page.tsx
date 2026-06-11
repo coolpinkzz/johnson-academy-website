@@ -13,7 +13,7 @@ import ContactForm from "./ContactForm";
 export const metadata: Metadata = {
   title: "Contact Johnson's Academy Bangalore",
   description:
-    "Contact Johnson's Academy to book a free demo class for music, dance, art, or karate in Bangalore. Call, WhatsApp, or visit our branches.",
+    "Contact Johnson's Academy to book a free demo class for music, dance, or art in Bangalore. Call, WhatsApp, or visit our branches.",
   alternates: {
     canonical: "/contact",
   },

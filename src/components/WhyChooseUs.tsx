@@ -1,11 +1,4 @@
-import {
-  Award,
-  Route,
-  Mic2,
-  Users,
-  Clock,
-  MapPin,
-} from "lucide-react";
+import { Award, Route, Mic2, Users, Clock, MapPin } from "lucide-react";
 
 const features = [
   {
@@ -18,8 +11,7 @@ const features = [
   {
     icon: Route,
     title: "Structured Learning Path",
-    description:
-      "Step-by-step curriculum from beginner to advanced levels.",
+    description: "Step-by-step curriculum from beginner to advanced levels.",
   },
   {
     icon: Mic2,
@@ -41,7 +33,7 @@ const features = [
     icon: MapPin,
     title: "Multiple Branches in Bangalore",
     description: "Easily accessible locations near you.",
-    stat: "3 Branches",
+    stat: "4 Branches",
   },
 ];
 

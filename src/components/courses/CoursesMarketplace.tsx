@@ -17,7 +17,6 @@ function categoryFromCourseId(courseId: string): string {
   if (courseId.includes("vocal")) return "Vocal";
   if (courseId.includes("dance")) return "Dance";
   if (courseId.includes("art")) return "Design";
-  if (courseId.includes("karate")) return "Fitness";
   return "Music";
 }
 

@@ -61,13 +61,6 @@ const courses = [
       "https://ik.imagekit.io/slipnscore/johnson-academy/art.jpg",
     href: "/courses/art-classes-bangalore",
   },
-  {
-    title: "Karate",
-    description: "Martial arts training for discipline and fitness.",
-    image:
-      "https://ik.imagekit.io/slipnscore/johnson-academy/karate.jpg",
-    href: "/courses/karate-classes-bangalore",
-  },
 ];
 
 export default function CoursesSection() {
@@ -86,33 +79,33 @@ export default function CoursesSection() {
             learners of all ages.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {courses.map((course) => (
             <a
               key={course.title}
               href={course.href}
-              className="group flex flex-col overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-0 transition-all hover:border-primary/50 hover:shadow-xl hover:shadow-primary/5"
+              className="group flex flex-col overflow-hidden rounded-xl bg-white/5 border border-white/10 p-0 transition-all hover:border-primary/50 hover:shadow-xl hover:shadow-primary/5"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-16/10 overflow-hidden">
                 <Image
                   src={course.image}
                   alt={course.title}
                   fill
                   className="object-cover transition-transform group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
-              <div className="flex flex-1 flex-col p-6">
-                <h3 className="text-xl font-semibold text-white">
+              <div className="flex flex-1 flex-col p-4">
+                <h3 className="text-base font-semibold text-white">
                   {course.title}
                 </h3>
-                <p className="mt-2 flex-1 text-sm text-muted">
+                <p className="mt-1.5 flex-1 text-xs leading-relaxed text-muted line-clamp-2">
                   {course.description}
                 </p>
-                <span className="mt-4 inline-flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
+                <span className="mt-3 inline-flex items-center gap-1.5 text-sm text-primary font-medium group-hover:gap-2 transition-all">
                   Learn More
                   <svg
-                    className="h-4 w-4"
+                    className="h-3.5 w-3.5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

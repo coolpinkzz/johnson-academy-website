@@ -25,7 +25,7 @@ export default function RefundPolicyPage() {
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
               At Johnson&apos;s Academy, we are committed to providing
-              high-quality training in music, dance, art, and karate. This
+              high-quality training in music, dance, and art. This
               policy outlines our guidelines for fees, cancellations,
               rescheduling, and refunds. By enrolling in our courses, you agree
               to these terms. Please read them carefully.

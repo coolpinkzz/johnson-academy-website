@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${branch.name} Branch`,
-    description: `${branch.seoLine}. Visit ${branch.name} for music, dance, art, and karate classes in Bangalore. Address: ${branch.address}.`,
+    description: `${branch.seoLine}. Visit ${branch.name} for music, dance, and art classes in Bangalore. Address: ${branch.address}.`,
     alternates: {
       canonical: `${SITE_URL}/our-branches/${branch.id}`,
     },

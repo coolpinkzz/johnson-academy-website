@@ -32,11 +32,11 @@ export default function OurBranchesPage() {
       </section>
 
       <section className="border-t border-white/10 bg-[#0A0A0A] px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {branches.map((branch) => (
             <article
               key={branch.id}
-              className="group overflow-hidden rounded-2xl border border-white/10 bg-black/60 transition-all hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10"
+              className="group overflow-hidden rounded-xl border border-white/10 bg-black/60 transition-all hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10"
             >
               <Link href={`/our-branches/${branch.id}`} className="block">
                 <div className="relative aspect-16/10 overflow-hidden">
@@ -45,7 +45,7 @@ export default function OurBranchesPage() {
                     alt={branch.seoLine}
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                   {branch.badge && (
                     <span className="absolute right-3 top-3 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-white">
@@ -55,33 +55,33 @@ export default function OurBranchesPage() {
                 </div>
               </Link>
 
-              <div className="flex h-full flex-col px-5 pb-5 pt-3">
-                <h2 className="text-xl font-semibold text-white">{branch.name}</h2>
-                <p className="mt-1.5 text-sm text-gray-400">{branch.seoLine}</p>
+              <div className="flex h-full flex-col p-4">
+                <h2 className="text-base font-semibold text-white">{branch.name}</h2>
+                <p className="mt-1 text-xs text-gray-400 line-clamp-1">{branch.seoLine}</p>
 
-                <div className="mt-3 flex items-start gap-2 text-gray-300">
-                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-logoBlue" />
-                  <p className="text-sm leading-relaxed">{branch.address}</p>
+                <div className="mt-2.5 flex items-start gap-1.5 text-gray-300">
+                  <MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0 text-logoBlue" />
+                  <p className="text-xs leading-relaxed line-clamp-2">{branch.address}</p>
                 </div>
 
-                <p className="mt-3 text-sm text-gray-400">{branch.landmark}</p>
-                <p className="mt-3 text-sm text-gray-300">{BRANCH_COURSES_LINE}</p>
+                <p className="mt-2 text-xs text-gray-400 line-clamp-1">{branch.landmark}</p>
+                <p className="mt-2 text-xs text-gray-300 line-clamp-2">{BRANCH_COURSES_LINE}</p>
 
-                <div className="mt-6 flex flex-wrap gap-3">
+                <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
                   <Link
                     href={`/our-branches/${branch.id}`}
-                    className="inline-flex items-center gap-2 rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary/90"
+                    className="inline-flex items-center justify-center gap-1.5 rounded-lg bg-primary px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-primary/90"
                   >
                     View details
-                    <ArrowRight className="h-4 w-4" />
+                    <ArrowRight className="h-3.5 w-3.5" />
                   </Link>
                   <a
                     href={branch.mapLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:border-logoBlue/50 hover:bg-logoBlue/10"
+                    className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-white/20 px-3 py-2 text-xs font-semibold text-white transition-colors hover:border-logoBlue/50 hover:bg-logoBlue/10"
                   >
-                    <Navigation className="h-4 w-4 text-logoBlue" />
+                    <Navigation className="h-3.5 w-3.5 text-logoBlue" />
                     Directions
                   </a>
                 </div>

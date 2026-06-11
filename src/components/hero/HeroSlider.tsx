@@ -36,7 +36,7 @@ const stats = [
     ),
   },
   {
-    value: 3,
+    value: 4,
     suffix: "",
     label: "Branches",
     icon: (

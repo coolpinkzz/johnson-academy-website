@@ -86,13 +86,13 @@ export default function AboutPage() {
               By 2018, we expanded into a larger commercial space, adding a wide
               range of programs, including Western and Indo-Western Keyboard,
               Drums, Violin, Hindustani Vocals, Western Vocals, Western Dance,
-              Indian Classical Dance, Karate, Dance Fitness, and Fine Arts such
+              Indian Classical Dance, Dance Fitness, and Fine Arts such
               as Drawing, Sketching, and Painting.
             </p>
             <p>
               Today, Johnson&apos;s Academy has proudly trained over 1,000
-              students and currently nurtures over 600 learners across two
-              branches. Both our centers are located in premium areas with easy
+              students and currently nurtures over 600 learners across four
+              branches. All our centers are located in premium areas with easy
               access and great connectivity, designed to provide a safe, secure,
               and welcoming environment for all students.
             </p>
@@ -194,7 +194,7 @@ export default function AboutPage() {
           <p className="mt-6 text-muted leading-relaxed">
             Johnson&apos;s Academy hosts Wings, the grand Annual Day Festival,
             where students showcase their talents on a professional stage. This
-            event is a celebration of music, dance, theater, and martial arts,
+            event is a celebration of music, dance, and theater,
             helping students gain confidence through live performances.
           </p>
           <div className="mt-8 space-y-6">
@@ -315,7 +315,7 @@ export default function AboutPage() {
             Ready to start your journey?
           </h2>
           <p className="mt-4 text-muted">
-            Explore our courses in music, dance, art, and karate. Book a free
+            Explore our courses in music, dance, and art. Book a free
             demo and discover your potential.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">

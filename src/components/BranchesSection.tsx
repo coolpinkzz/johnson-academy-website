@@ -9,9 +9,9 @@ export default function BranchesSection() {
   return (
     <section
       id="branches"
-      className="bg-[#0A0A0A] px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28"
+      className="bg-[#0A0A0A] px-4 py-16 sm:px-6 sm:py-0 lg:px-8 lg:py-0"
     >
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-screen-2xl">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Visit Our Bangalore Branches
@@ -22,7 +22,7 @@ export default function BranchesSection() {
           </p>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 xl:grid-cols-4">
           {branches.map((branch) => (
             <article
               key={branch.id}
@@ -37,7 +37,7 @@ export default function BranchesSection() {
                   alt={branch.seoLine}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
                 />
                 {branch.badge && (
                   <span className="absolute right-3 top-3 rounded-full bg-primary px-3 py-1 text-xs font-semibold text-white">
@@ -67,7 +67,9 @@ export default function BranchesSection() {
                       {branch.address}
                     </p>
                     <p className="mt-1.5 text-xs leading-snug text-gray-500">
-                      <span className="font-medium text-gray-400">Landmark</span>
+                      <span className="font-medium text-gray-400">
+                        Landmark
+                      </span>
                       <span className="text-gray-600"> · </span>
                       {branch.landmark}
                     </p>
@@ -103,7 +105,9 @@ export default function BranchesSection() {
                         <Calendar className="h-4 w-4" strokeWidth={2} />
                       </span>
                     </div>
-                    <p className="text-sm text-gray-300">Weekday &amp; weekend batches</p>
+                    <p className="text-sm text-gray-300">
+                      Weekday &amp; weekend batches
+                    </p>
                   </div>
                   <div className="grid grid-cols-[2.75rem_1fr] items-center gap-x-3">
                     <div className="flex justify-center">
@@ -142,7 +146,7 @@ export default function BranchesSection() {
                   View on map
                 </a>
 
-                <div className="mt-auto flex flex-col gap-3 pt-6 sm:flex-row sm:items-center">
+                <div className="mt-auto flex flex-col gap-3 pt-6">
                   <a
                     href="tel:+917798347976"
                     className="inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-primary/90"
@@ -153,7 +157,10 @@ export default function BranchesSection() {
                     href={`/our-branches/${branch.id}`}
                     className="inline-flex items-center justify-center gap-2 rounded-xl border border-gray-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:border-logoBlue/50 hover:bg-logoBlue/10 hover:text-sky-200"
                   >
-                    <Navigation className="h-4 w-4 text-logoBlue" strokeWidth={2} />
+                    <Navigation
+                      className="h-4 w-4 text-logoBlue"
+                      strokeWidth={2}
+                    />
                     View details
                   </Link>
                 </div>

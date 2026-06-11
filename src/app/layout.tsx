@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_ORIGIN),
   title: {
     default:
-      "Johnson's Academy | Music, Dance, Art and Karate Classes in Bangalore",
+      "Johnson's Academy | Music, Dance and Art Classes in Bangalore",
     template: "%s | Johnson's Academy",
   },
   description:

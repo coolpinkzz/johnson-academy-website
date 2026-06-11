@@ -342,22 +342,22 @@
     },
     {
       "id": "hindustani-vocal-classes-bangalore",
-      "title": "Hindustani Vocal Classes in Bangalore",
-      "description": "Discover the beauty of Hindustani classical vocals at Johnson's Academy. Our Hindustani vocal classes in Bangalore teach proper technique, ragas, and expression for all levels.",
+      "title": "Hindustani & Western Vocal Classes in Bangalore",
+      "description": "Learn Hindustani classical and Western vocal styles at Johnson's Academy. Our vocal classes in Bangalore teach proper technique, expression, and performance skills for singers of all levels.",
       "image": "https://images.unsplash.com/photo-1738658024539-a8d1527fa8e8?q=80&w=1674&auto=format&fit=crop",
-      "metaDescription": "Join the best Hindustani vocal classes in Bangalore at Johnson's Academy. Learn from expert trainers. Book a free demo today.",
+      "metaDescription": "Join Hindustani and Western vocal classes in Bangalore at Johnson's Academy. Learn from expert trainers. Book a free demo today.",
       "about": [
-        "Our Hindustani vocal classes in Bangalore are rooted in traditional training while remaining accessible to modern learners. Students learn voice culture, pitch control, and the fundamentals of raga and taal.",
-        "The curriculum includes alankars, sargam, light classical, bhajans, and semi-classical forms. We emphasize proper breath control, pronunciation, and emotional expression.",
-        "Whether you're new to Indian classical music or wish to deepen your practice, our experienced instructors guide you from basics to advanced improvisation."
+        "Our vocal classes in Bangalore cover both Hindustani classical and Western contemporary singing. Whether you want to explore ragas and taal or develop your voice for pop, rock, and jazz, Johnson's Academy offers structured training for all levels.",
+        "Hindustani vocal students learn voice culture, pitch control, alankars, sargam, and repertoire spanning light classical, bhajans, and semi-classical forms. Western vocal students build healthy vocal habits, range expansion, and performance skills across contemporary genres.",
+        "Experienced instructors guide each student based on their chosen style and goals—from ABGMM examination preparation to live stage readiness. Book a free demo to find the right vocal path for you."
       ],
       "learningPoints": [
-        "Voice culture and breath control",
-        "Alankars and sargam practice",
-        "Introduction to ragas and taals",
-        "Light classical and bhajan repertoire",
-        "Semi-classical and thumri basics",
-        "Improvisation and stage performance"
+        "Voice culture, breath control, and vocal support",
+        "Pitch accuracy, ear training, and sargam practice",
+        "Hindustani fundamentals: ragas, taals, and alankars",
+        "Light classical, bhajan, and semi-classical repertoire",
+        "Western styles: pop, rock, and contemporary singing",
+        "Improvisation, microphone technique, and stage performance"
       ],
       "whoCanJoin": [
         "Kids (6+ years)",
@@ -402,6 +402,48 @@
             "otherHighlights": [
               "Email: anigirikaraa@gmail.com",
               "YouTube: https://youtu.be/jDsOTR_wB8k?si=Qvb0uH54eou4YSh_"
+            ]
+          }
+        },
+        {
+          "name": "Mr. Yogan Sunam",
+          "title": "Music Educator | Performer | Composer",
+          "image": "/instructors/yogan.png",
+          "imageFit": "contain",
+          "bio": "Western vocal trainer and live performer focused on expression, stage readiness, and disciplined vocal practice.",
+          "experience": "20 years",
+          "teaches": [
+            "Western Vocals"
+          ],
+          "teachingSince": "2009",
+          "quote": "Nothing is necessary than the unnecessary.",
+          "highlight": "Blends live band experience with student-friendly vocal coaching",
+          "achievements": [
+            "Vocalist and band manager for The Nameless",
+            "Nearly 20 years of performance experience",
+            "Music educator across multiple academies before Johnson's Academy"
+          ],
+          "knowMore": {
+            "about": "Experienced performer and composer helping western vocal students develop confidence, control, and stage expression.",
+            "qualifications": [
+              "Music Degree - Rock School of London",
+              "BA (Honours), DGC Darjeeling"
+            ],
+            "teachingExperience": [
+              "Tarang Dance & Music, Kolkata (2009-2013)",
+              "Taaqad Academy (2021-2022)",
+              "Hum & Strum (2023-2024)",
+              "Joined Johnson's Academy on 10 August 2025"
+            ],
+            "performanceAndWork": [
+              "Member of The Nameless (est. 2017), based in Darjeeling",
+              "Roles: Vocalist, Guitarist, and Band Manager",
+              "Band winners of 5 music competition awards in Darjeeling"
+            ],
+            "notableWork": [
+              "Released 8 original compositions",
+              "Youngster (Darjeeling film) - Music composition and background score",
+              "Taxi Driver (Darjeeling film) - Music contribution"
             ]
           }
         }

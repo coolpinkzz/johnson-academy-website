@@ -43,7 +43,6 @@ export default function TermsAndConditionsPage() {
               <li>Music Classes (Guitar, Keyboard, Drums, Violin, Vocals)</li>
               <li>Dance Classes (Western, Indian Classical, Dance Fitness)</li>
               <li>Art Classes (Drawing, Sketching, Painting)</li>
-              <li>Karate & Other Specialized Programs</li>
             </ul>
           </section>
 

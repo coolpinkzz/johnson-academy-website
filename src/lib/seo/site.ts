@@ -4,7 +4,7 @@ export const SITE_ORIGIN = "https://www.johnsonsacademy.in" as const;
 export const SITE_NAME = "Johnson's Academy";
 
 export const SITE_DESCRIPTION =
-  "Learn Guitar, Keyboard, Drums, Violin, Dance, Art and Karate at Johnson's Academy in Bangalore. Book your free demo class today.";
+  "Learn Guitar, Keyboard, Drums, Violin, Dance and Art at Johnson's Academy in Bangalore. Book your free demo class today.";
 
 export const ORGANIZATION_ID = `${SITE_ORIGIN}/#organization` as const;
 export const WEBSITE_ID = `${SITE_ORIGIN}/#website` as const;
@@ -29,6 +29,22 @@ export const ADDRESSES = [
     addressLocality: "Bengaluru",
     addressRegion: "Karnataka",
     postalCode: "560076",
+    addressCountry: "IN",
+  },
+  {
+    streetAddress:
+      "Sumukha Greenville, Johnson's Academy, Vijaya Bank Layout",
+    addressLocality: "Bengaluru",
+    addressRegion: "Karnataka",
+    postalCode: "560076",
+    addressCountry: "IN",
+  },
+  {
+    streetAddress:
+      "Bus Stop, 2nd Floor, Above Titan Showroom, Neeladri Rd, Electronic City Phase I",
+    addressLocality: "Bengaluru",
+    addressRegion: "Karnataka",
+    postalCode: "560100",
     addressCountry: "IN",
   },
 ] as const;
