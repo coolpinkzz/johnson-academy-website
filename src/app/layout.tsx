@@ -29,14 +29,10 @@ export const metadata: Metadata = {
   },
   description:
     "Learn Guitar, Keyboard, Drums, Violin, Dance and Art at Johnson Academy. Book your free demo class today.",
-  icons: {
-    icon: [{ url: "/logo.png", type: "image/png" }],
-    shortcut: "/logo.png",
-    apple: [{ url: "/logo.png", type: "image/png" }],
-  },
 };
 
 const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const googleAdsId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
 
 export default function RootLayout({
   children,
@@ -49,8 +45,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-black text-white">
-        {gaMeasurementId ? (
-          <GoogleAnalytics gaId={gaMeasurementId} />
+        {gaMeasurementId || googleAdsId ? (
+          <GoogleAnalytics
+            gaId={gaMeasurementId}
+            googleAdsId={googleAdsId}
+          />
         ) : null}
         <JsonLdScript
           id="jsonld-organization-website"
